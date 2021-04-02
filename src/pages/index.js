@@ -18,7 +18,11 @@ export default function Home() {
             My projects
           </Link>
         </div>
-        <img src="/banner.png" alt="site banner" style={{ maxWidth: "100%" }} />
+        <img
+          src="/banner.png"
+          alt="site banner"
+          style={{ maxWidth: "80%", marginLeft: "60px" }}
+        />
       </section>
     </Layout>
   )

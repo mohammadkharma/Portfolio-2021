@@ -11,3 +11,9 @@
   font-size: 2em;
   font-weight: 400;
 }
+
+.error > p {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 40px;
+}

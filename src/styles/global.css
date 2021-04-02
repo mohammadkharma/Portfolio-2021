@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans&display=swap");
+
+:root {
+  --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: "Bitter", serif; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  line-height: 1.6;
+  color: #333;
+  background: #ddd;
+  background-size: 300%;
+  background-image: var(--gradient);
+  animation: bg-animation 25s infinite;
+}

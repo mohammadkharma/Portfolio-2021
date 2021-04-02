@@ -4,7 +4,8 @@ import Layout from "../../components/Layout"
 export default function Projects() {
   return (
     <Layout>
-      <h1>Projects</h1>
+      <h2>Projects</h2>
+      <h3>$ website I've created</h3>
     </Layout>
   )
 }

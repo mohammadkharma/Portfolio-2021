@@ -9,7 +9,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html,
+body {
+  min-height: 100%;
+}
 body {
   /* font-family: "Bitter", serif; */
   min-height: 100vh;
@@ -23,6 +26,11 @@ body {
   background-size: 300%;
   background-image: var(--gradient);
   animation: bg-animation 25s infinite;
+}
+
+p {
+  margin: 16px auto;
+  line-height: 1.5em;
 }
 
 @keyframes bg-animation {

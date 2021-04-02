@@ -6,7 +6,7 @@ export default function Home() {
     <Layout>
       <section>
         <div>
-          <h1>Develop</h1>
+          <h2>Develop</h2>
           <h3>Design & Deploy</h3>
           <p>Web developer & designer based in Berlin</p>
         </div>

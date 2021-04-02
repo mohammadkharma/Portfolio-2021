@@ -26,7 +26,7 @@ body {
   /* color: #333; */
   background: #ddd;
   background-size: 300%;
-  background-image: linear-gradient(90deg, #ee6352, purple, #ee6352);
+  background-image: linear-gradient(90deg, #529dee, purple, #529dee);
   animation: bg-animation 25s infinite;
 }
 
@@ -55,9 +55,9 @@ nav {
   margin: 40px auto;
 }
 
-nav .link {
+nav .links {
   display: inline-block;
-  text-align: right;
+  text-align: center;
 }
 
 nav a {

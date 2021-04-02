@@ -1,13 +1,13 @@
-.contact {
+.error {
   text-align: center;
 }
 
-.contact > h2 {
+.error > h2 {
   font-size: 3em;
   margin-top: 80px;
 }
 
-.contact > h3 {
+.error > h3 {
   font-size: 2em;
   font-weight: 400;
 }

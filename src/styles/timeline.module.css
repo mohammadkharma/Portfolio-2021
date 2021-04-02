@@ -1,0 +1,13 @@
+.timeline {
+  text-align: center;
+}
+
+.timeline > h2 {
+  font-size: 3em;
+  margin-top: 80px;
+}
+
+.timeline > h3 {
+  font-size: 2em;
+  font-weight: 400;
+}

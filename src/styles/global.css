@@ -13,14 +13,26 @@
 body {
   /* font-family: "Bitter", serif; */
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.125em;
-  line-height: 1.6;
-  color: #333;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* font-size: 1.125em; */
+  /* line-height: 1.6; */
+  /* color: #333; */
   background: #ddd;
   background-size: 300%;
   background-image: var(--gradient);
   animation: bg-animation 25s infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }

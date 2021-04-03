@@ -1,12 +1,14 @@
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
+import Img from "gatsby-image"
 
 // must be checked:
 // https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#css-modules-are-imported-as-es-modules
 import * as styles from "../styles/home.module.css"
 
-export default function Home() {
+export default function Home({ data }) {
+  const image = data.file.childImageSharp.fluid
   return (
     <Layout>
       <section className={styles.header}>
@@ -18,12 +20,20 @@ export default function Home() {
             My projects
           </Link>
         </div>
-        <img
-          src="/banner.png"
-          alt="site banner"
-          style={{ maxWidth: "80%", marginLeft: "60px" }}
-        />
+        <Img fluid={image} />
       </section>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query Banner {
+    file(relativePath: { eq: "banner.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -27,8 +27,7 @@ export default function Home({ data }) {
           style={{ maxWidth: "80%", marginLeft: "60px" }}
         />
         <p>
-          {" "}
-          {title} - {description}{" "}
+          test: {title} - {description}
         </p>
       </section>
     </Layout>

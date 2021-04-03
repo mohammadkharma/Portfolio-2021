@@ -10,7 +10,7 @@ export default function Projects({ data }) {
       <div className={styles.projects}>
         <h2>Projects</h2>
         <h3>& websites I've created</h3>
-        <div>
+        <div className={styles.project}>
           {projects.map(project => (
             <Link to={"/projects" + project.frontmatter.slug} key={project.id}>
               <div>

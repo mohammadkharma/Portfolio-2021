@@ -17,3 +17,21 @@
   font-weight: 400;
   margin-top: 40px;
 }
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+
+.project h3 {
+  text-align: center;
+  margin: 20px auto 0px;
+  font-weight: 500;
+}
+
+.project p {
+  color: #ccc;
+  margin-top: 4px;
+}

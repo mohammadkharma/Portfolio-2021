@@ -14,7 +14,10 @@ export default function Projects({ data }) {
         <h3>& websites I've created</h3>
         <div className={styles.project}>
           {projects.map(project => (
-            <Link to={"/projects" + project.frontmatter.slug} key={project.id}>
+            <Link
+              to={"/projects-md/" + project.frontmatter.slug}
+              key={project.id}
+            >
               <div>
                 <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
                 <h3>{project.frontmatter.title}</h3>
@@ -33,9 +36,7 @@ export default function Projects({ data }) {
 
 export const query = graphql`
   query ProjectsPage {
-    projects: allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-    ) {
+    projects: allMarkdownRemark {
       nodes {
         frontmatter {
           slug

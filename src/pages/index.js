@@ -2,6 +2,7 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
+// import Video from "../../static/video.mp4"
 
 // must be checked:
 // https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#css-modules-are-imported-as-es-modules
@@ -20,7 +21,10 @@ export default function Home({ data }) {
             My projects
           </Link>
         </div>
-        <Img fluid={image} />
+        <Img className={styles.img} fluid={image} />
+        {/* <video muted loop autoplay="true">
+          <source src={Video} type="video/mp4" />
+        </video> */}
       </section>
     </Layout>
   )

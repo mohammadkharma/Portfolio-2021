@@ -21,7 +21,8 @@
     "gatsby-transformer-remark": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-vanilla-tilt": "^1.0.0"
   },
   "devDependencies": {
     "prettier": "2.2.1"

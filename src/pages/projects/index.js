@@ -2,7 +2,8 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
+import Tilt from "react-vanilla-tilt"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -14,19 +15,30 @@ export default function Projects({ data }) {
         <h3>& websites I've created</h3>
         <div className={styles.projectsList}>
           {projects.map(project => (
-            <Link
-              to={"/projects-md/" + project.frontmatter.slug}
-              key={project.id}
-            >
+            <Tilt className={styles.tilt}>
               <div className={styles.project}>
-                <Img
+                <div className={styles.content}>
+                  {/* <Img
                   className={styles.img}
                   fluid={project.frontmatter.thumb.childImageSharp.fluid}
-                />
-                <h3>{project.frontmatter.title}</h3>
-                <p>{project.frontmatter.stack}</p>
+                /> */}
+                  <h2>{project.frontmatter.title}</h2>
+                  <h3>{project.frontmatter.stack}</h3>
+                  <p>
+                    Lorem ninja ipsum dolor sit amet, consectetuer adipiscing
+                    elit
+                  </p>
+                  <Link
+                    className={styles.btn}
+                    to={"/projects-md/" + project.frontmatter.slug}
+                    key={project.id}
+                  >
+                    {" "}
+                    read more
+                  </Link>
+                </div>
               </div>
-            </Link>
+            </Tilt>
           ))}
         </div>
         <p>

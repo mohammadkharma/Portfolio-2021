@@ -15,10 +15,12 @@ body {
 
 body {
   font-family: "Bitter", serif;
-  background: #ddd;
-  background-size: 300%;
-  background-image: linear-gradient(90deg, #529dee, purple, #529dee);
-  animation: bg-animation 25s infinite;
+  background-image: url(../../static/digitization.jpeg);
+  background-size: 110%;
+  background-attachment: fixed;
+  /* background: #ddd;
+  background-image: linear-gradient(90deg, #529dee, purple, #529dee);*/
+  animation: bg-animation 50s ease-in infinite;
 }
 
 @keyframes bg-animation {
@@ -40,9 +42,23 @@ body::before {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(#2196f3, #e91e63);
-  clip-path: circle(40% at right 70%);
+  background: linear-gradient(to left, #000000, #07377e, #093f8f);
+  background-size: 150%;
+  clip-path: circle(15% at right 70%);
   z-index: -1;
+  animation: bodyBfore 15s ease-in infinite alternate;
+}
+
+@keyframes bodyBfore {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 body::after {
@@ -52,9 +68,23 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#2196f3, #e91e63);
-  clip-path: circle(20% at 10% 30%);
+  background: linear-gradient(to right, #000000, #07377e, #093f8f);
+  clip-path: circle(25% at 10% 30%);
+  background-size: 150%;
   z-index: -1;
+  animation: bodyAfter 15s ease-in infinite alternate;
+}
+
+@keyframes bodyAfter {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
 }
 
 /* layout & nav */
@@ -89,8 +119,9 @@ nav a:hover {
 
 footer p {
   text-align: center;
-  color: white;
-  margin: 20px auto;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  margin-top: 30vh;
 }
 
 /* video {

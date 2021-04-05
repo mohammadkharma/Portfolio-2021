@@ -1,5 +1,5 @@
 ---
-title: Project 4
+title: P4
 stack: HTML & CSS
 slug: projects-example-4
 date: 2021-01-09T00:00:00+00:00

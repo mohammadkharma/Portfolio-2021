@@ -1,5 +1,5 @@
 ---
-title: Project 5
+title: P5
 stack: HTML & CSS
 slug: projects-example-5
 date: 2021-01-07T00:00:00+00:00

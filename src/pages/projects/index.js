@@ -9,17 +9,20 @@ export default function Projects({ data }) {
   const contact = data.contact.siteMetadata.contact
   return (
     <Layout>
-      <div className={styles.projects}>
+      <div className={styles.projectsHomepage}>
         <h2>Projects</h2>
         <h3>& websites I've created</h3>
-        <div className={styles.project}>
+        <div className={styles.projectsList}>
           {projects.map(project => (
             <Link
               to={"/projects-md/" + project.frontmatter.slug}
               key={project.id}
             >
-              <div>
-                <Img fluid={project.frontmatter.thumb.childImageSharp.fluid} />
+              <div className={styles.project}>
+                <Img
+                  className={styles.img}
+                  fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                />
                 <h3>{project.frontmatter.title}</h3>
                 <p>{project.frontmatter.stack}</p>
               </div>
@@ -27,7 +30,7 @@ export default function Projects({ data }) {
           ))}
         </div>
         <p>
-          Like what you see? Email me at <b>{contact}</b> for a talk!{" "}
+          Like what you see? Email me at <b>{contact}</b> for a talk!
         </p>
       </div>
     </Layout>

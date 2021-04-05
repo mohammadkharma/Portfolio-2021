@@ -1,37 +1,56 @@
-.projects {
+.projectsHomepage {
   text-align: center;
 }
 
-.projects > h2 {
+.projectsHomepage > h2 {
   font-size: 3em;
   margin-top: 80px;
 }
 
-.projects > h3 {
+.projectsHomepageHomepage > h3 {
   font-size: 2em;
   font-weight: 400;
 }
 
-.projects > p {
+.projectsHomepage > p {
   font-size: 1em;
   font-weight: 400;
   margin-top: 40px;
 }
 
-.project {
+.projectsList {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 80px;
   margin: 80px 20px;
 }
 
+.project {
+  position: relative;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.img {
+  width: 70%;
+  margin: 20px auto;
+}
+
 .project h3 {
   text-align: center;
-  margin: 20px auto 0px;
+  margin: 20px auto;
   font-weight: 500;
 }
 
 .project p {
   color: #ccc;
-  margin-top: 4px;
+  margin: 20px auto;
 }

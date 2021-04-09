@@ -21,11 +21,11 @@
     "gatsby-transformer-remark": "^3.2.0",
     "gatsby-transformer-sharp": "^3.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-vanilla-tilt": "^1.0.0"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "react-vanilla-tilt": "^1.0.0"
   },
   "repository": {
     "type": "git",

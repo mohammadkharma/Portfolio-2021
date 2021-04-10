@@ -3,11 +3,13 @@ import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
 // import Img from "gatsby-image"
+// import * as VanillaTilt from "vanilla-tilt"
 import Tilt from "react-vanilla-tilt"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
+
   return (
     <Layout>
       <div className={styles.projectsHomepage}>

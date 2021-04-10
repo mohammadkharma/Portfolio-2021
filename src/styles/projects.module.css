@@ -21,22 +21,18 @@
 .projectsList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 80px;
-  margin: 80px 20px;
 }
-
+.tilt {
+  background: transparent !important;
+  width: 80% !important;
+  display: block !important;
+  margin: auto !important;
+}
 .project {
-  position: relative;
-  /* height: 60vh; */
-  width: 30vw;
-  margin: 30px auto;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.1);
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
@@ -45,19 +41,15 @@
 .content {
   padding: 20px;
   text-align: center;
-  /* transform: translateY(100px); */
-  opacity: 1;
+  transform: translateY(125px);
+  opacity: 0.5;
   transition: 0.5s;
 }
 
-.tilt {
-  background: transparent !important;
-}
-
-/* .project:hover .content {
+.project:hover .content {
   transform: translateY(0px);
   opacity: 1;
-} */
+}
 
 /* .img {
   width: 70%;
@@ -69,7 +61,7 @@
   top: -30px;
   right: 30px; */
   font-size: 8em;
-  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
   pointer-events: none;
 }
 

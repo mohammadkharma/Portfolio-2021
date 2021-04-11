@@ -21,13 +21,16 @@
 .projectsList {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
 }
+
 .tilt {
   background: transparent !important;
   width: 80% !important;
   display: block !important;
   margin: auto !important;
 }
+
 .project {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -75,6 +78,7 @@
   font-size: 1em;
   color: #fff;
   font-weight: 300;
+  z-index: 1;
 }
 
 .btn {
@@ -100,4 +104,5 @@ video {
   width: 70%;
   object-fit: cover;
   border-radius: 15px;
+  z-index: 1;
 }

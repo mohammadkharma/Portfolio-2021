@@ -46,10 +46,10 @@ body::before {
   background-size: 150%;
   clip-path: circle(15% at right 70%);
   z-index: -1;
-  animation: bodyBfore 15s ease-in infinite alternate;
+  animation: bodyBefore 10s ease-in infinite alternate;
 }
 
-@keyframes bodyBfore {
+@keyframes bodyBefore {
   0% {
     background-position: left;
   }
@@ -72,7 +72,7 @@ body::after {
   clip-path: circle(25% at 10% 30%);
   background-size: 150%;
   z-index: -1;
-  animation: bodyAfter 15s ease-in infinite alternate;
+  animation: bodyAfter 10s ease-in infinite alternate;
 }
 
 @keyframes bodyAfter {

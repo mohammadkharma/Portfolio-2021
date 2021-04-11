@@ -2,10 +2,10 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 // import * as VanillaTilt from "vanilla-tilt"
 import Tilt from "react-vanilla-tilt"
-import Video from "../../../static/video.mp4"
+// import Video from "../../../static/video.mp4"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -21,13 +21,13 @@ export default function Projects({ data }) {
             <Tilt className={styles.tilt}>
               <div className={styles.project}>
                 <div className={styles.content}>
-                  {/* <Img
-                  className={styles.img}
-                  fluid={project.frontmatter.thumb.childImageSharp.fluid}
-                /> */}
-                  <video muted loop autoplay="true">
+                  <Img
+                    className={styles.img}
+                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  />
+                  {/* <video muted loop autoplay="true">
                     <source src={Video} type="video/mp4" />
-                  </video>
+                  </video> */}
                   <h2>{project.frontmatter.title}</h2>
                   <h3>{project.frontmatter.stack}</h3>
                   <p>

@@ -19,10 +19,7 @@ export default function ProjectDetails({ data }) {
             <Img fluid={featuredImg.childImageSharp.fluid} />
           </div>
           <div className={styles.content}>
-            <div
-              className={styles.html}
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
+            <div dangerouslySetInnerHTML={{ __html: html }} />
             <p className={styles.link}>
               click <a href={link}>here</a> to the visite the site
             </p>

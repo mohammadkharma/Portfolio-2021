@@ -2,10 +2,8 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
-import Img from "gatsby-image"
-// import * as VanillaTilt from "vanilla-tilt"
 import Tilt from "react-vanilla-tilt"
-// import Video from "../../../static/video.mp4"
+import Img from "gatsby-image"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -22,7 +20,6 @@ export default function Projects({ data }) {
               <div className={styles.project}>
                 <div className={styles.content}>
                   <Img
-                    className={styles.img}
                     fluid={project.frontmatter.thumb.childImageSharp.fluid}
                   />
                   {/* <video muted loop autoplay="true">
@@ -39,7 +36,6 @@ export default function Projects({ data }) {
                     to={"/projects-md/" + project.frontmatter.slug}
                     key={project.id}
                   >
-                    {" "}
                     read more
                   </Link>
                 </div>
@@ -66,7 +62,7 @@ export const query = graphql`
           thumb {
             childImageSharp {
               fluid {
-                ...GatsbyImageSharpFluid
+                src
               }
             }
           }

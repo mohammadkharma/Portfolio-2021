@@ -20,7 +20,7 @@ body {
   background-attachment: fixed;
   /* background: #ddd;
   background-image: linear-gradient(90deg, #529dee, purple, #529dee);*/
-  animation: bg-animation 50s ease-in infinite;
+  animation: bg-animation 30s ease-in infinite;
 }
 
 @keyframes bg-animation {
@@ -123,13 +123,3 @@ footer p {
   position: relative;
   margin-top: 30vh;
 }
-
-/* video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-} */

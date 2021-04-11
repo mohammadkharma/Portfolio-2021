@@ -54,16 +54,18 @@
   opacity: 1;
 }
 
-/* .img {
-  width: 70%;
-  margin: 20px auto;
-} */
+.img {
+  width: 60%;
+  display: block;
+  margin: auto;
+  border-radius: 25px;
+}
 
 .content h2 {
   /* position: absolute;
   top: -30px;
   right: 30px; */
-  font-size: 8em;
+  font-size: 3em;
   z-index: 1;
   pointer-events: none;
 }
@@ -98,11 +100,4 @@
   text-decoration: none;
   font-weight: 500;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-video {
-  width: 70%;
-  object-fit: cover;
-  border-radius: 15px;
-  z-index: 1;
 }

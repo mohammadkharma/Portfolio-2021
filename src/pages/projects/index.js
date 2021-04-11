@@ -20,11 +20,9 @@ export default function Projects({ data }) {
               <div className={styles.project}>
                 <div className={styles.content}>
                   <Img
+                    className={styles.img}
                     fluid={project.frontmatter.thumb.childImageSharp.fluid}
                   />
-                  {/* <video muted loop autoplay="true">
-                    <source src={Video} type="video/mp4" />
-                  </video> */}
                   <h2>{project.frontmatter.title}</h2>
                   <h3>{project.frontmatter.stack}</h3>
                   <p>

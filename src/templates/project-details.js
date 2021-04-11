@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
-  const { title, stack, link, featuredImg } = data.markdownRemark.frontmatter
+  const { title, stack, link, thumb } = data.markdownRemark.frontmatter
 
   return (
     <div>
@@ -16,7 +16,7 @@ export default function ProjectDetails({ data }) {
           <h3>{stack}</h3>
 
           <div>
-            <Img fluid={featuredImg.childImageSharp.fluid} />
+            <Img fluid={thumb.childImageSharp.fluid} />
           </div>
           <div className={styles.content}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -38,7 +38,7 @@ export const query = graphql`
         title
         stack
         link
-        featuredImg {
+        thumb {
           childImageSharp {
             fluid {
               ...GatsbyImageSharpFluid

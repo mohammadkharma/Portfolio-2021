@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: Tic-Tac-Toe-Game
 link: https://mohammadkharma.github.io/Tic_Tac_Toe_Game/
 github: https://github.com/mohammadkharma/Tic_Tac_Toe_Game
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/tic.jpg
 featuredImg: ../images/featured/p1-banner.png
 ---
 

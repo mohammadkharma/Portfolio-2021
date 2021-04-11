@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: Guessing-Game
 link: https://mohammadkharma.github.io/DOM/projects/guessing_game/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/guessing_game
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/guess.jpg
 featuredImg: ../images/featured/p6-banner.png
 ---
 

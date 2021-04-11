@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: React-Router
 link: https://mohammadkharma.github.io/
 github: https://github.com/mohammadkharma/React_Router
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/router.jpg
 featuredImg: ../images/featured/p4-banner.png
 ---
 

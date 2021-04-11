@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: Cashier-Problem
 link: https://mohammadkharma.github.io/DOM/projects/cashier_problem/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/cashier_problem
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/cashier.jpg
 featuredImg: ../images/featured/p5-banner.png
 ---
 

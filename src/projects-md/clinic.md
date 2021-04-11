@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: Clinic
 link: https://mohammadkharma.github.io/DOM/projects/pharmakopoeia_laboratories/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/pharmakopoeia_laboratories
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/clinic.jpg
 featuredImg: ../images/featured/p5-banner.png
 ---
 

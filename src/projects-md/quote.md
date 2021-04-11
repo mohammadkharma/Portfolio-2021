@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: Quote-Of-The-Day
 link: https://mohammadkharma.github.io/DOM/projects/quote_of_day/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/quote_of_day
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/quote.jpg
 featuredImg: ../images/featured/p5-banner.png
 ---
 

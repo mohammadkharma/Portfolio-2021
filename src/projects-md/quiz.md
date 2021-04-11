@@ -4,7 +4,7 @@ stack: JAVASCRIPT HTML & CSS
 slug: Quiz-App
 link: https://mohammadkharma.github.io/DOM/projects/quiz_app/main.html
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/quiz_app
-thumb: ../images/thumbs/tic.png
+thumb: ../images/thumbs/quiz.jpg
 featuredImg: ../images/featured/p5-banner.png
 ---
 

@@ -1,69 +1,40 @@
-import React from "react"
+import React, { useContext } from "react"
 import Navbar from "./Navbar"
 import "../styles/global.css"
+import { Global, css } from "@emotion/core"
+import { useTheme } from "@emotion/react"
+import Context from "../store/context"
 
 export default function Layout({ children }) {
+  const { state } = useContext(Context)
+  const theme = useTheme()
   return (
     <div className="layout">
       <Navbar />
-      <div className="content">{children}</div>
+      <div className="content">
+        <Global
+          styles={css`
+            * {
+              box-sizing: border-box;
+              margin: 0;
+              padding: 0;
+            }
+
+            body {
+              background-color: ${state.isDark
+                ? theme.dark.background
+                : theme.light.background};
+            }
+          `}
+        />
+        {children}
+      </div>
       <footer>
         <p>Copyright 2021 Mohammad Kharma</p>
       </footer>
     </div>
   )
 }
-
-// import React, { useContext } from "react"
-// import { Global, css } from "@emotion/core"
-// import { useTheme } from "@emotion/react"
-// import Context from "../store/context"
-// import { theme } from "../theme/theme"
-
-// const Layout = ({ children }) => {
-//   const { state } = useContext(Context)
-
-//   const theme = useTheme()
-
-//   return (
-//     <div>
-//       <Global
-//         styles={css`
-//           * {
-//             box-sizing: border-box;
-//             margin: 0;
-//             padding: 0;
-//           }
-
-//           body {
-//             background-color: ${state.isDark
-//               ? theme.dark.background
-//               : theme.light.background};
-//           }
-//         `}
-//       />
-
-//       {children}
-//     </div>
-//   )
-// }
-
-// export default Layout
-//     <div className="layout">
-//       <Navbar />
-//       <div className="content">{children}</div>
-//       <footer>
-//         <p>Copyright 2021 Mohammad Kharma</p>
-//       </footer>
-//     </div>
-//   )
-// }
-
-// import React, { useContext } from "react"
-// import { Global, css } from "@emotion/core"
-// import { useTheme } from "@emotion/react"
-// import Context from "../store/context"
-// import { theme } from "../theme/theme"
 
 // const Layout = ({ children }) => {
 //   const { state } = useContext(Context)

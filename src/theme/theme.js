@@ -1,11 +1,11 @@
-// export const theme = {
-//   light: {
-//     font: "black",
-//     background: "white",
-//   },
+export const theme = {
+  light: {
+    font: "black",
+    background: "white",
+  },
 
-//   dark: {
-//     font: "white",
-//     background: "black",
-//   },
-// }
+  dark: {
+    font: "white",
+    background: "black",
+  },
+}

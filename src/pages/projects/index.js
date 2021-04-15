@@ -24,11 +24,7 @@ export default function Projects({ data }) {
                     fluid={project.frontmatter.thumb.childImageSharp.fluid}
                   />
                   <h2>{project.frontmatter.title}</h2>
-                  <h3>{project.frontmatter.stack}</h3>
-                  <p>
-                    Lorem ninja ipsum dolor sit amet, consectetuer adipiscing
-                    elit
-                  </p>
+                  <h4>{project.frontmatter.stack}</h4>
                   <Link
                     className={styles.btn}
                     to={"/projects-md/" + project.frontmatter.slug}

@@ -20,84 +20,82 @@
 
 .projectsList {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   margin-top: 20px;
 }
 
 .tilt {
+  width: 100% !important;
   background: transparent !important;
-  width: 80% !important;
-  display: block !important;
-  margin: auto !important;
 }
 
 .project {
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.3);
   overflow: hidden;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
-}
-
-.content {
-  padding: 20px;
-  text-align: center;
-  transform: translateY(125px);
-  opacity: 0.5;
   transition: 0.5s;
 }
 
+.content {
+  text-align: center;
+  transform: translateY(150px);
+  opacity: 0.8;
+  transition: 0.5s;
+  min-height: 400px;
+}
+
+.project:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
 .project:hover .content {
-  transform: translateY(0px);
+  transform: translateY(20px);
   opacity: 1;
 }
 
+.project:hover h2,
+h4 {
+  color: black;
+}
+
 .img {
-  width: 60%;
+  width: 80%;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  height: 200px;
   display: block;
-  margin: auto;
+  margin: 10px auto;
   border-radius: 25px;
 }
 
 .content h2 {
-  /* position: absolute;
-  top: -30px;
-  right: 30px; */
-  font-size: 3em;
-  z-index: 1;
+  transition: 0.5s;
+  margin: 10px auto;
+  letter-spacing: 5px;
   pointer-events: none;
+  text-shadow: 0px 5px 10px #000;
 }
 
-.content h3 {
-  font-size: 1.8em;
-  color: #fff;
-  z-index: 1;
-}
-
-.content p {
-  font-size: 1em;
-  color: #fff;
-  font-weight: 300;
-  z-index: 1;
+.content h4 {
+  transition: 0.5s;
+  margin: 10px auto;
+  pointer-events: none;
+  letter-spacing: 5px;
+  text-shadow: 0px 5px 10px #000;
 }
 
 .btn {
-  /* display: inline-block;
-  background: rgb(0, 166, 255);
-  padding: 10px 16px;
-  border-radius: 10px;
-  margin-top: 20px;
-  font-weight: 500; */
-  position: relative;
-  display: inline-block;
+  display: block;
+  width: 50%;
   padding: 8px 20px;
-  margin-top: 15px;
+  margin: 30px auto;
   background: #fff;
   color: #000;
   border-radius: 20px;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }

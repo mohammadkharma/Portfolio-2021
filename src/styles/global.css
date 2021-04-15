@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans&display=swap");
-
+/* 
 * {
   margin: 0;
   padding: 0;
@@ -11,17 +11,17 @@
 html,
 body {
   min-height: 100%;
-}
+} */
 
-body {
+/* body {
   font-family: "Bitter", serif;
   background-image: url(../../static/bg.jpg);
-  background-size: 100%;
-  /* background-attachment: fixed; */
-  /* background: #ddd;
+  background-size: 100%; */
+/* background-attachment: fixed; */
+/* background: #ddd;
   background-image: linear-gradient(90deg, #529dee, purple, #529dee);*/
-  /* animation: bg-animation 30s ease-in infinite; */
-}
+/* animation: bg-animation 30s ease-in infinite; */
+/* } */
 
 @keyframes bg-animation {
   0% {

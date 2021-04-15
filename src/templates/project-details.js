@@ -21,7 +21,11 @@ export default function ProjectDetails({ data }) {
           <div className={styles.content}>
             <div dangerouslySetInnerHTML={{ __html: html }} />
             <p className={styles.link}>
-              click <a href={link}>here</a> to the visite the site
+              click{" "}
+              <a href={link} target="_blank">
+                here
+              </a>{" "}
+              to the visite the site
             </p>
           </div>
         </div>

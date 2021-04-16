@@ -18,12 +18,16 @@ export default function Layout({ children }) {
               box-sizing: border-box;
               margin: 0;
               padding: 0;
+              text-decoration: none;
             }
 
             body {
+              font-family: "Bitter", serif;
               background-color: ${state.isDark
                 ? theme.dark.background
                 : theme.light.background};
+              background-image: url(../../../static/bg.jpg);
+              background-size: 100%;
             }
           `}
         />

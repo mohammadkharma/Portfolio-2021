@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Open+Sans&display=swap");
-/* 
+
 * {
   margin: 0;
   padding: 0;
@@ -11,43 +11,28 @@
 html,
 body {
   min-height: 100%;
-} */
-
-/* body {
-  font-family: "Bitter", serif;
-  background-image: url(../../static/bg.jpg);
-  background-size: 100%; */
-/* background-attachment: fixed; */
-/* background: #ddd;
-  background-image: linear-gradient(90deg, #529dee, purple, #529dee);*/
-/* animation: bg-animation 30s ease-in infinite; */
-/* } */
-
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
 }
 
-/* body::before {
+body {
+  font-family: "Bitter", serif;
+  /* background: darkgrey; */
+}
+
+body::before {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background: linear-gradient(to left, #1d1d1d, #c2c2c2, #1d1d1d);
-  background-size: 150%;
-  clip-path: circle(15% at right 70%);
+  background: linear-gradient(to right, #a4a4a4, #4f4f4f, #a4a4a4);
+  background-image: url(../../static/sun.jpg);
+  background-size: 100%;
+  background-position: center;
+  /* clip-path: circle(15% at right 70%); */
   z-index: -1;
-  animation: bodyBefore 10s ease-in infinite alternate;
-} */
+  /* animation: bodyBefore 10s ease-in infinite alternate; */
+}
 
 @keyframes bodyBefore {
   0% {
@@ -61,19 +46,23 @@ body {
   }
 }
 
-/* body::after {
+body::after {
   content: "";
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #1d1d1d, #c2c2c2, #1d1d1d);
-  clip-path: circle(25% at 10% 30%);
-  background-size: 150%;
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(to right, #4f4f4f, #a4a4a4, #4f4f4f); */
+  /* clip-path: circle(25% at 10% 30%); */
+  background-image: url(../../static/moon1.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 30px 20px 30px white;
   z-index: -1;
-  animation: bodyAfter 10s ease-in infinite alternate;
-} */
+  /* animation: bodyAfter 10s ease-in infinite alternate; */
+}
 
 @keyframes bodyAfter {
   0% {

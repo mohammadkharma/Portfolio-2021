@@ -8,4 +8,9 @@ export const theme = {
     font: "white",
     background: "black",
   },
+
+  display: {
+    block: "block",
+    none: "none",
+  },
 }

@@ -15,19 +15,22 @@ export default function Layout({ children }) {
         <Global
           styles={css`
             * {
-              box-sizing: border-box;
-              margin: 0;
-              padding: 0;
-              text-decoration: none;
+              color: ${state.isDark ? theme.dark.font : theme.light.font};
             }
-
             body {
-              font-family: "Bitter", serif;
               background-color: ${state.isDark
                 ? theme.dark.background
                 : theme.light.background};
-              background-image: url(../../../static/bg.jpg);
-              background-size: 100%;
+            }
+            body::before {
+              display: ${state.isDark
+                ? theme.display.none
+                : theme.display.block};
+            }
+            body::after {
+              display: ${state.isDark
+                ? theme.display.block
+                : theme.display.none};
             }
           `}
         />

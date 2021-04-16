@@ -2,8 +2,6 @@ import React, { useContext } from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
-import { css } from "@emotion/core"
-import { useTheme } from "@emotion/react"
 import Context from "../store/context"
 
 // must be checked:
@@ -14,18 +12,10 @@ export default function Home({ data }) {
   const image = data.file.childImageSharp.fluid
   const { state, dispatch } = useContext(Context)
 
-  const theme = useTheme()
   return (
     <Layout>
       <section className={styles.header}>
-        <div
-          css={css`
-            h1,
-            h2 {
-              color: ${state.isDark ? theme.dark.font : theme.light.font};
-            }
-          `}
-        >
+        <div>
           <h2>Develop</h2>
           <h3>Design & Deploy</h3>
           <p>Web developer & designer based in Berlin</p>

@@ -15,7 +15,6 @@ body {
 
 body {
   font-family: "Bitter", serif;
-  /* background: darkgrey; */
 }
 
 body::before {
@@ -93,10 +92,7 @@ nav {
 nav a {
   border-bottom: 3px solid transparent;
   margin-left: 20px;
-}
-
-nav a:hover {
-  border-color: white;
+  font-size: 18px;
 }
 
 footer {

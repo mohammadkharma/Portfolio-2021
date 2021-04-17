@@ -18,10 +18,10 @@ export default function Layout({ children }) {
             * {
               color: ${state.isDark ? theme.dark.font : theme.light.font};
             }
-            body {
-              background-color: ${state.isDark
-                ? theme.dark.background
-                : theme.light.background};
+            nav a:hover {
+              border-color: ${state.isDark
+                ? theme.dark.borderColor
+                : theme.light.borderColor};
             }
             body::before {
               display: ${state.isDark
@@ -29,9 +29,10 @@ export default function Layout({ children }) {
                 : theme.display.block};
             }
             body::after {
-              display: ${state.isDark
-                ? theme.display.block
-                : theme.display.none};
+              display: ${state.isDark ? "block" : "none"};
+            }
+            section::before {
+              display: ${state.isDark ? "block" : "none"};
             }
           `}
         />

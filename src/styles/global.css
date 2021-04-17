@@ -108,11 +108,15 @@ footer p {
 
 /* theme toggle input */
 
-input[type="checkbox"] {
+.theme-toggle {
   position: fixed;
   bottom: 5vh;
   right: calc(50% - 60px);
-  margin-left: 50px;
+}
+
+input[type="checkbox"] {
+  margin-top: 10px;
+  position: relative;
   width: 120px;
   height: 40px;
   -webkit-appearance: none;

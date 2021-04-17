@@ -28,13 +28,16 @@ export default function Navbar() {
         {/* <button onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}>
           Toggle Dark Mode
         </button> */}
-        <input
-          onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
-          id="checkbox"
-          type="checkbox"
-          name=""
-          checked={state.isDark ? true : false}
-        />
+        <div className="theme-toggle">
+          <p>Dark Mode is {state.isDark ? "on" : "off"}</p>
+          <input
+            onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+            id="checkbox"
+            type="checkbox"
+            name=""
+            checked={state.isDark ? true : false}
+          />
+        </div>
       </div>
     </nav>
   )

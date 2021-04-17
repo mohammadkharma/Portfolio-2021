@@ -22,7 +22,6 @@ export default function Home({ data }) {
           <Link className={styles.btn} to="/projects">
             My projects
           </Link>
-          <h2>Dark Mode is {state.isDark ? "on" : "off"}</h2>
         </div>
         <Img className={styles.img} fluid={image} />
       </section>

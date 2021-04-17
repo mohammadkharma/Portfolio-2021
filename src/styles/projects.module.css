@@ -27,6 +27,7 @@
 .tilt {
   width: 100% !important;
   background: transparent !important;
+  box-shadow: none !important;
 }
 
 .project {

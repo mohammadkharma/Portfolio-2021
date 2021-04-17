@@ -10,7 +10,7 @@ import * as styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
   const image = data.file.childImageSharp.fluid
-  const { state, dispatch } = useContext(Context)
+  const { state } = useContext(Context)
 
   return (
     <Layout>
@@ -22,9 +22,6 @@ export default function Home({ data }) {
           <Link className={styles.btn} to="/projects">
             My projects
           </Link>
-          <button onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}>
-            Toggle Dark Mode
-          </button>
           <h2>Dark Mode is {state.isDark ? "on" : "off"}</h2>
         </div>
         <Img className={styles.img} fluid={image} />

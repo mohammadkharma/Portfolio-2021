@@ -15,7 +15,7 @@ export default function Navbar() {
 
   const { title } = data.site.siteMetadata
 
-  const { dispatch } = useContext(Context)
+  const { state, dispatch } = useContext(Context)
 
   return (
     <nav>
@@ -25,9 +25,16 @@ export default function Navbar() {
         <Link to="/about">About</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/contact">Contact</Link>
-        <button onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}>
+        {/* <button onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}>
           Toggle Dark Mode
-        </button>
+        </button> */}
+        <input
+          onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+          id="checkbox"
+          type="checkbox"
+          name=""
+          checked={state.isDark ? true : false}
+        />
       </div>
     </nav>
   )

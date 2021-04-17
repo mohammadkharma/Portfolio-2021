@@ -89,6 +89,41 @@ nav {
   margin: 20px auto;
 }
 
+nav h1.one {
+  -webkit-box-reflect: below 0px
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  animation: Title 5s linear infinite;
+  outline: none;
+  pointer-events: none;
+}
+
+@keyframes Title {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    text-shadow: none;
+  }
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    text-shadow: 0 0 10px #63cdff, 0 0 20px #63cdff, 0 0 40px #63cdff,
+      0 0 80px #63cdff, 0 0 160px #63cdff;
+  }
+}
+
 nav a {
   border-bottom: 3px solid transparent;
   margin-left: 20px;

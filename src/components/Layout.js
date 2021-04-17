@@ -34,6 +34,12 @@ export default function Layout({ children }) {
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }
+            nav h1.one {
+              display: ${state.isDark ? "block" : "none"};
+            }
+            nav h1.two {
+              display: ${state.isDark ? "none" : "block"};
+            }
           `}
         />
         {children}
@@ -52,33 +58,3 @@ export default function Layout({ children }) {
     </div>
   )
 }
-
-// const Layout = ({ children }) => {
-//   const { state } = useContext(Context)
-
-//   const theme = useTheme()
-
-//   return (
-//     <div>
-//       <Global
-//         styles={css`
-//           * {
-//             box-sizing: border-box;
-//             margin: 0;
-//             padding: 0;
-//           }
-
-//           body {
-//             background-color: ${state.isDark
-//               ? theme.dark.background
-//               : theme.light.background};
-//           }
-//         `}
-//       />
-
-//       {children}
-//     </div>
-//   )
-// }
-
-// export default Layout

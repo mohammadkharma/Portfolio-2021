@@ -1,8 +1,7 @@
-import React, { useContext } from "react"
+import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/Layout"
 import Img from "gatsby-image"
-import Context from "../store/context"
 
 // must be checked:
 // https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#css-modules-are-imported-as-es-modules
@@ -10,7 +9,6 @@ import * as styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
   const image = data.file.childImageSharp.fluid
-  const { state } = useContext(Context)
 
   return (
     <Layout>

@@ -6,8 +6,9 @@ import { useTheme } from "@emotion/react"
 import Context from "../store/context"
 
 export default function Layout({ children }) {
-  const { state } = useContext(Context)
+  const { state, dispatch } = useContext(Context)
   const theme = useTheme()
+
   return (
     <div className="layout">
       <Navbar />
@@ -37,6 +38,14 @@ export default function Layout({ children }) {
         {children}
       </div>
       <footer>
+        <p>Dark Mode is {state.isDark ? "on" : "off"}</p>
+        <input
+          onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+          id="checkbox"
+          type="checkbox"
+          name=""
+          checked={state.isDark ? true : false}
+        />
         <p>Copyright 2021 Mohammad Kharma</p>
       </footer>
     </div>

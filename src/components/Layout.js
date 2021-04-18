@@ -18,15 +18,47 @@ export default function Layout({ children }) {
             * {
               color: ${state.isDark ? theme.dark.font : theme.light.font};
             }
-
-            nav .theme-toggle p b {
+            body {
+              background: ${state.isDark
+                ? theme.dark.background
+                : theme.light.background};
+            }
+            body::before {
+              display: ${state.isDark
+                ? theme.display.none
+                : theme.display.block};
+            }
+            body::after {
+              display: ${state.isDark ? "block" : "none"};
+            }
+            nav .hamburger .line {
+              background: ${state.isDark
+                ? theme.light.background
+                : theme.dark.background};
+            }
+            nav .links .theme-toggle p b {
               color: ${state.isDark ? "#63cdff" : theme.light.font};
             }
-
             nav .links a:hover {
               text-decoration: underline;
             }
             nav .links a.active {
+              border-bottom: none;
+              text-shadow: ${state.isDark
+                  ? "0 0 10px #63cdff"
+                  : "0 0 80px #000"},
+                ${state.isDark ? "0 0 10px #63cdff" : "0 0 10px #000"};
+              -webkit-box-reflect: ${state.isDark
+                ? "below -120% linear-gradient(#0002, #0008)"
+                : "none"};
+              text-decoration: underline;
+            }
+            nav #hidden {
+              background: ${state.isDark
+                ? theme.dark.background
+                : theme.light.background};
+            }
+            nav #hidden a.active {
               border-bottom: none;
               text-shadow: ${state.isDark
                   ? "0 0 10px #63cdff"
@@ -36,17 +68,9 @@ export default function Layout({ children }) {
                 ${state.isDark ? "0 0 80px #63cdff" : "none"},
                 ${state.isDark ? "0 0 160px #63cdff" : "none"};
               -webkit-box-reflect: ${state.isDark
-                ? "below -120% linear-gradient(#0002, #0008)"
+                ? "below 0 linear-gradient(#0002, #0008)"
                 : "none"};
               text-decoration: underline;
-            }
-            body::before {
-              display: ${state.isDark
-                ? theme.display.none
-                : theme.display.block};
-            }
-            body::after {
-              display: ${state.isDark ? "block" : "none"};
             }
             section::before {
               display: ${state.isDark ? "block" : "none"};

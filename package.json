@@ -14,7 +14,6 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@react-icons/all-files": "^4.1.0",
     "emotion-theming": "^11.0.0",
     "gatsby": "^3.1.2",
     "gatsby-image": "^3.2.0",
@@ -25,8 +24,7 @@
     "gatsby-transformer-sharp": "^3.2.0",
     "local-storage-fallback": "^4.1.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^4.2.0"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@emotion/core": "^10.1.1",

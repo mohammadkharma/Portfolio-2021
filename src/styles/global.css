@@ -17,6 +17,7 @@ body {
   font-family: "Bitter", serif;
 }
 
+/* body::before for light mode theme only */
 body::before {
   content: "";
   position: fixed;
@@ -28,23 +29,10 @@ body::before {
   background-image: url(../../static/wall1.jpg);
   background-size: 100%;
   background-position: center;
-  /* clip-path: circle(15% at right 70%); */
   z-index: -1;
-  /* animation: bodyBefore 10s ease-in infinite alternate; */
 }
 
-@keyframes bodyBefore {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
+/* body::after for dark mode theme only */
 body::after {
   content: "";
   position: fixed;
@@ -52,52 +40,41 @@ body::after {
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* background: linear-gradient(to right, #4f4f4f, #a4a4a4, #4f4f4f); */
-  /* clip-path: circle(25% at 10% 30%); */
   background-image: url(../../static/wall.jpg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
   box-shadow: 30px 20px 30px white;
   z-index: -1;
-  /* animation: bodyAfter 10s ease-in infinite alternate; */
 }
 
-@keyframes bodyAfter {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
-/* layout & nav */
-
+/* layout  */
 .layout {
   max-width: 90vw;
   margin: 0 auto;
 }
 
+/* nav */
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: top;
   margin: 20px auto;
 }
 
-nav h1.one {
-  -webkit-box-reflect: below 0px
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-  animation: Title 5s linear infinite;
+/* nav title */
+nav .title {
+  width: 33.3%;
+}
+nav h1.dark-theme {
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
   outline: none;
+  font-size: 2em;
   pointer-events: none;
+  animation: title 5s linear infinite;
 }
 
-@keyframes Title {
+@keyframes title {
   0%,
   18%,
   20%,
@@ -124,23 +101,22 @@ nav h1.one {
   }
 }
 
-nav a {
-  border-bottom: 3px solid transparent;
-  margin-left: 20px;
-  font-size: 18px;
-}
-
-footer {
-  position: fixed;
-  bottom: 1vh;
+/* nav theme toggle */
+nav .theme-toggle {
+  width: 33.3%;
   text-align: center;
-  width: 90%;
 }
 
-/* theme toggle input */
+nav .theme-toggle p {
+  margin-bottom: 5px;
+}
+
+nav .theme-toggle p b {
+  margin-left: 5px;
+  font-size: 1.5em;
+}
 
 input[type="checkbox"] {
-  margin: 10px auto;
   position: relative;
   width: 120px;
   height: 40px;
@@ -194,4 +170,16 @@ input:checked[type="checkbox"]::after {
   background: #63cdff;
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
   left: 105px;
+}
+
+/* nav links */
+nav .links {
+  width: 33.3%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .links a {
+  font-size: 1.5em;
 }

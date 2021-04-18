@@ -17,7 +17,7 @@ export default function Projects({ data }) {
         <div className={styles.projectsList}>
           {projects.map(project => (
             <Tilt className={styles.tilt}>
-              <div className={styles.project}>
+              <div id="projects" className={styles.project}>
                 <div className={styles.content}>
                   <Img
                     className={styles.img}

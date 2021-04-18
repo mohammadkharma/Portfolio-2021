@@ -28,6 +28,7 @@
   width: 100% !important;
   background: transparent !important;
   box-shadow: none !important;
+  margin: auto !important;
 }
 
 .project {
@@ -41,6 +42,17 @@
   transition: 0.5s;
 }
 
+.project::before {
+  content: "";
+  position: absolute;
+  box-shadow: 0px 0px 20px #63cdff, 0px 0px 20px #63cdff, 0px 0px 20px #63cdff;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .content {
   text-align: center;
   transform: translateY(150px);
@@ -51,6 +63,7 @@
 
 .project:hover {
   background: rgba(255, 255, 255, 0.8);
+  overflow: visible !important;
 }
 
 .project:hover .content {

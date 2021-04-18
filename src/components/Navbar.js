@@ -1,5 +1,6 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
 import React, { useContext, useState } from "react"
+import { AiOutlineMenu } from "@react-icons/all-files/fa/AiOutlineMenu"
 import Context from "../store/context"
 
 export default function Navbar() {
@@ -51,7 +52,7 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="menu">
-          <button onClick={() => setShowLinks(!showLinks)}>open</button>
+          <AiOutlineMenu onClick={() => setShowLinks(!showLinks)} />
         </div>
       </div>
     </nav>

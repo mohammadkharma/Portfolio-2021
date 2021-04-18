@@ -1,5 +1,5 @@
 import { Link, graphql, useStaticQuery } from "gatsby"
-import React, { useContext } from "react"
+import React, { useContext, useState } from "react"
 import Context from "../store/context"
 
 export default function Navbar() {
@@ -16,7 +16,7 @@ export default function Navbar() {
   const { title } = data.site.siteMetadata
 
   const { state, dispatch } = useContext(Context)
-
+  const [showLinks, setShowLinks] = useState(false)
   return (
     <nav>
       <div className="title">
@@ -35,19 +35,24 @@ export default function Navbar() {
           checked={state.isDark ? true : false}
         />
       </div>
-      <div className="links">
-        <Link to="/" activeClassName="active">
-          Home
-        </Link>
-        <Link to="/about" activeClassName="active">
-          About
-        </Link>
-        <Link to="/projects" activeClassName="active">
-          Projects
-        </Link>
-        <Link to="/contact" activeClassName="active">
-          Contact
-        </Link>
+      <div className="links-list">
+        <div className="links" id={showLinks ? "hidden" : ""}>
+          <Link to="/" activeClassName="active">
+            Home
+          </Link>
+          <Link to="/about" activeClassName="active">
+            About
+          </Link>
+          <Link to="/projects" activeClassName="active">
+            Projects
+          </Link>
+          <Link to="/contact" activeClassName="active">
+            Contact
+          </Link>
+        </div>
+        <div className="menu">
+          <button onClick={() => setShowLinks(!showLinks)}>open</button>
+        </div>
       </div>
     </nav>
   )

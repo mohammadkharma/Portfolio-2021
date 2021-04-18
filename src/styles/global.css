@@ -173,13 +173,53 @@ input:checked[type="checkbox"]::after {
 }
 
 /* nav links */
-nav .links {
+nav .links-list {
   width: 33.3%;
-  text-align: right;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  background: rgb(226, 107, 107);
 }
 
-nav .links a {
+nav .links-list .links {
+  background: rgb(77, 69, 69);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav .links-list #hidden {
+  display: block;
+}
+
+nav .links-list .links a {
   font-size: 1.5em;
+  width: 25%;
+  text-align: right;
+  background: rgb(173, 235, 3);
+}
+
+nav .links-list .menu {
+  top: 1vh;
+  right: 1vw;
+  display: none;
+}
+
+nav .links-list .menu button {
+  font-size: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+  nav .links-list .menu {
+    display: block;
+  }
+
+  nav .links-list .links {
+    display: none;
+  }
+
+  nav .links-list #hidden {
+    position: absolute;
+    left: 0;
+    top: 100px;
+  }
 }

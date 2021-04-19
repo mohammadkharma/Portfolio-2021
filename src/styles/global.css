@@ -149,7 +149,7 @@ nav .links a {
 nav .links .theme-toggle {
   text-align: center;
   font-style: italic;
-  transform: translateY(-22px);
+  transform: translateY(-27px);
 }
 
 nav .links .theme-toggle p {
@@ -229,21 +229,16 @@ nav .hamburger .line {
 }
 
 @media only screen and (max-width: 1200px) {
-  nav .title {
-    width: 45%;
-  }
-
   nav h1.dark-theme,
   nav h1.light-theme {
     font-size: 1.5em;
   }
 
-  nav .links {
-    width: 60%;
-  }
-
   nav .links a {
     font-size: 1.2em;
+  }
+  nav .links .theme-toggle {
+    transform: translateY(-23px);
   }
 
   nav .links .theme-toggle p {
@@ -293,6 +288,10 @@ footer p {
   nav .hamburger {
     display: block;
     z-index: 10;
+  }
+
+  nav .title {
+    width: 60%;
   }
 
   nav .links {

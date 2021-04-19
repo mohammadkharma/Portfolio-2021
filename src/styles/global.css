@@ -43,7 +43,6 @@ body::after {
   background-image: url(../../static/wall.jpg);
   background-position: center;
   background-size: 100%;
-  background-repeat: no-repeat;
   box-shadow: 30px 20px 30px white;
   z-index: -1;
 }
@@ -64,7 +63,7 @@ nav {
 
 /* nav title */
 nav .title {
-  width: 60%;
+  width: 50%;
 }
 
 nav h1.dark-theme {
@@ -111,7 +110,7 @@ nav h1.light-theme {
 nav .links {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 50%;
 }
 
 nav #hidden {
@@ -142,29 +141,27 @@ nav #hidden .theme-toggle {
 }
 
 nav .links a {
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-align: left;
 }
 
 /* nav theme toggle */
 nav .links .theme-toggle {
   text-align: center;
+  font-style: italic;
+  transform: translateY(-22px);
 }
 
 nav .links .theme-toggle p {
   font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-nav .links .theme-toggle p b {
-  margin-left: 5px;
 }
 
 input[type="checkbox"] {
   position: relative;
-  width: 120px;
-  height: 40px;
+  width: 90px;
+  height: 30px;
   -webkit-appearance: none;
+  margin: 5px 0px;
   background: linear-gradient(0deg, #333, #000);
   outline: none;
   border-radius: 20px;
@@ -185,8 +182,8 @@ input[type="checkbox"]::before {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
   background: linear-gradient(0deg, #000, #6b6b6b);
   border-radius: 20px;
   box-shadow: 0 0 0 1px #232323;
@@ -195,14 +192,14 @@ input[type="checkbox"]::before {
 }
 
 input:checked[type="checkbox"]::before {
-  left: 40px;
+  left: 30px;
 }
 
 input[type="checkbox"]::after {
   content: "";
   position: absolute;
   top: calc(50% - 2px);
-  left: 65px;
+  left: 45px;
   width: 4px;
   height: 4px;
   background: linear-gradient(0deg, #6b6b6b, #000);
@@ -213,7 +210,7 @@ input[type="checkbox"]::after {
 input:checked[type="checkbox"]::after {
   background: #63cdff;
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
-  left: 105px;
+  left: 75px;
 }
 
 nav .hamburger {
@@ -238,15 +235,20 @@ nav .hamburger .line {
 
   nav h1.dark-theme,
   nav h1.light-theme {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 
   nav .links {
     width: 60%;
   }
 
-  nav .links .theme-toggle {
-    text-align: right;
+  nav .links a {
+    font-size: 1.2em;
+  }
+
+  nav .links .theme-toggle p {
+    text-align: center;
+    font-size: 1em;
   }
 
   input[type="checkbox"] {
@@ -272,10 +274,25 @@ nav .hamburger .line {
   }
 }
 
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 10;
+  margin-top: 100px;
+}
+
+footer p {
+  color: rgb(135, 135, 135);
+}
+
+/* responsive */
 @media only screen and (max-width: 800px) {
   nav .hamburger {
     display: block;
-    z-index: 16;
+    z-index: 10;
   }
 
   nav .links {

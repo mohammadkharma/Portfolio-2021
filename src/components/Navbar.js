@@ -38,9 +38,7 @@ export default function Navbar() {
           Contact
         </Link>
         <div className="theme-toggle">
-          <p>
-            Dark mode: <b> {state.isDark ? "ON" : "OFF"} </b>
-          </p>
+          <p>Dark mode:</p>
           <input
             onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
             id="checkbox"
@@ -48,10 +46,15 @@ export default function Navbar() {
             name=""
             checked={state.isDark ? true : false}
           />
+          <p>{state.isDark ? "ON" : "OFF"}</p>
         </div>
       </div>
 
-      <div className="hamburger" onClick={() => setShowLinks(!showLinks)}>
+      <div
+        className="hamburger"
+        onClick={() => setShowLinks(!showLinks)}
+        onKeyPress={() => setShowLinks(!showLinks)}
+      >
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

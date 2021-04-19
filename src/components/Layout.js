@@ -36,20 +36,20 @@ export default function Layout({ children }) {
                 ? theme.light.background
                 : theme.dark.background};
             }
-            nav .links .theme-toggle p b {
+            nav .links .theme-toggle p {
               color: ${state.isDark ? "#63cdff" : theme.light.font};
             }
             nav .links a:hover {
               text-decoration: underline;
+              margin-bottom: 10px;
             }
             nav .links a.active {
-              border-bottom: none;
               text-shadow: ${state.isDark
                   ? "0 0 10px #63cdff"
-                  : "0 0 80px #000"},
-                ${state.isDark ? "0 0 10px #63cdff" : "0 0 10px #000"};
+                  : "0 0 30px #000"},
+                ${state.isDark ? "0 0 10px #63cdff" : "0 0 30px #000"};
               -webkit-box-reflect: ${state.isDark
-                ? "below -120% linear-gradient(#0002, #0008)"
+                ? "below -140% linear-gradient(#0003, #000)"
                 : "none"};
               text-decoration: underline;
             }
@@ -88,17 +88,10 @@ export default function Layout({ children }) {
         />
         {children}
       </div>
-      {/* <footer>
-        <p>Dark Mode is {state.isDark ? "on" : "off"}</p>
-        <input
-          onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
-          id="checkbox"
-          type="checkbox"
-          name=""
-          checked={state.isDark ? true : false}
-        />
+      <footer>
         <p>Copyright 2021 Mohammad Kharma</p>
-      </footer> */}
+        <p>Powered by Gatsby</p>
+      </footer>
     </div>
   )
 }

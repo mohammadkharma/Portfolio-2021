@@ -16,7 +16,7 @@ export default function Projects({ data }) {
         <h3>& websites I've created</h3>
         <div className={styles.projectsList}>
           {projects.map(project => (
-            <Tilt className={styles.tilt}>
+            <Tilt key={project.id} className={styles.tilt}>
               <div id="projects" className={styles.project}>
                 <div className={styles.content}>
                   <Img
@@ -28,7 +28,6 @@ export default function Projects({ data }) {
                   <Link
                     className={styles.btn}
                     to={"/projects-md/" + project.frontmatter.slug}
-                    key={project.id}
                   >
                     read more
                   </Link>

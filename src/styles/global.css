@@ -157,6 +157,7 @@ nav .links .theme-toggle p {
 }
 
 input[type="checkbox"] {
+  cursor: move;
   position: relative;
   width: 90px;
   height: 30px;

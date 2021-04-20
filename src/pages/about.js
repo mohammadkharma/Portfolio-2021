@@ -6,8 +6,7 @@ export default function About() {
   return (
     <Layout>
       <div className={styles.about}>
-        <h2>About</h2>
-        <h3>Lorem ipsum dolor sit amet</h3>
+        <h2>About Me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

@@ -44,6 +44,7 @@ export default function Navbar() {
             id="checkbox"
             type="checkbox"
             name=""
+            readOnly={true}
             checked={state.isDark ? true : false}
           />
           <p>{state.isDark ? "ON" : "OFF"}</p>

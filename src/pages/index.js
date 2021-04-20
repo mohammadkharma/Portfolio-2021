@@ -13,7 +13,7 @@ export default function Home({ data }) {
   return (
     <Layout>
       <section className={styles.header}>
-        <div>
+        <div className={styles.intro}>
           <h2>Develop</h2>
           <h3>Design & Deploy</h3>
           <p>Web developer & designer based in Berlin</p>

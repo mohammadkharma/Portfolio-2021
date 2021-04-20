@@ -216,10 +216,13 @@ input:checked[type="checkbox"]::after {
 
 nav .hamburger {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 5vh;
+  background: none;
+  border: none;
+  right: 9vw;
   transform: translate(5%, 5%);
   cursor: pointer;
+  outline: none;
   display: none;
 }
 
@@ -229,6 +232,21 @@ nav .hamburger .line {
   margin: 5px;
 }
 
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 10;
+  margin-top: 10vh;
+}
+
+footer p {
+  color: rgb(135, 135, 135);
+}
+
+/* responsive */
 @media only screen and (max-width: 1200px) {
   nav h1.dark-theme,
   nav h1.light-theme {
@@ -268,24 +286,17 @@ nav .hamburger .line {
   input:checked[type="checkbox"]::after {
     left: 50px;
   }
-}
 
-/* footer */
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  z-index: 10;
-  margin-top: 100px;
-}
-
-footer p {
-  color: rgb(135, 135, 135);
+  footer {
+    margin: 10vh auto;
+  }
 }
 
 /* responsive */
 @media only screen and (max-width: 800px) {
+  nav {
+    width: 80vw;
+  }
   nav .hamburger {
     display: block;
     z-index: 10;

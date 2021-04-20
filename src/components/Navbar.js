@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div
+      <button
         className="hamburger"
         onClick={() => setShowLinks(!showLinks)}
         onKeyPress={() => setShowLinks(!showLinks)}
@@ -59,7 +59,7 @@ export default function Navbar() {
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-      </div>
+      </button>
     </nav>
   )
 }

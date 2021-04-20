@@ -24,7 +24,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(to right, #a4a4a4, #4f4f4f, #a4a4a4);
   background-image: url(../../static/wall1.jpg);
   background-size: 100%;
@@ -39,7 +39,7 @@ body::after {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-image: url(../../static/wall.jpg);
   background-position: center;
   background-size: 100%;
@@ -240,6 +240,7 @@ footer {
   text-align: center;
   z-index: 10;
   margin-top: 10vh;
+  z-index: 1;
 }
 
 footer p {
@@ -286,10 +287,6 @@ footer p {
   input:checked[type="checkbox"]::after {
     left: 50px;
   }
-
-  footer {
-    margin: 10vh auto;
-  }
 }
 
 /* responsive */
@@ -303,7 +300,7 @@ footer p {
   }
 
   nav .title {
-    width: 60%;
+    width: 80%;
   }
 
   nav .links {

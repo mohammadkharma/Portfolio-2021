@@ -13,7 +13,7 @@ export default function About() {
   return (
     <Layout>
       <div className={styles.about}>
-        <div className={styles.aboutMe}>
+        <section className={styles.aboutMe}>
           <h2>Let us get to know eachothers!</h2>
           <div className={styles.aboutMeItem}>
             <h3>General Me</h3>
@@ -76,9 +76,9 @@ export default function About() {
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.references} id="references">
+        <section className={styles.references} id="references">
           <h2>References</h2>
           <div>
             <h3>Resume & Coverletter</h3>
@@ -152,15 +152,17 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.skillsHobbies}>
+        <section className={styles.skillsHobbies}>
           <h2>Skills & Hobbies</h2>
-          In the new Tech world, it's good to have some digital skills. I
-          improved mine in MS Office, Photoshop, and Video Edit. As for Hobbies,
-          Basketball comes first, followed by Table Tennis, Reading, and Playing
-          Digital Games.
-        </div>
+          <p>
+            In the new Tech world, it's good to have some digital skills. I
+            improved mine in MS Office, Photoshop, and Video Edit. As for
+            Hobbies, Basketball comes first, followed by Table Tennis, Reading,
+            and Playing Digital Games.
+          </p>
+        </section>
       </div>
     </Layout>
   )

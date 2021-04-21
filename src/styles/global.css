@@ -291,9 +291,10 @@ footer p {
 
 /* responsive */
 @media only screen and (max-width: 800px) {
-  nav {
+  .layout {
     width: 80vw;
   }
+
   nav .hamburger {
     display: block;
     z-index: 10;

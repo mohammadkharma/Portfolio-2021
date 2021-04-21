@@ -78,7 +78,6 @@
 
 @media only screen and (max-width: 800px) {
   .header {
-    width: 80vw;
     flex-direction: column;
     text-align: center;
   }

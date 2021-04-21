@@ -217,9 +217,9 @@ input:checked[type="checkbox"]::after {
 nav .hamburger {
   position: absolute;
   top: 5vh;
+  right: 9vw;
   background: none;
   border: none;
-  right: 9vw;
   transform: translate(5%, 5%);
   cursor: pointer;
   outline: none;

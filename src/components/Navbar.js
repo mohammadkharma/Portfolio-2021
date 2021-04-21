@@ -30,6 +30,11 @@ export default function Navbar() {
         </Link>
         <Link to="/about" activeClassName="active">
           About
+          <select>
+            <option>Simply Me</option>
+            <option>Skills & Hobbies</option>
+            <option href="#references">References</option>
+          </select>
         </Link>
         <Link to="/projects" activeClassName="active">
           Projects

@@ -1,19 +1,69 @@
 .about {
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  margin: 1vh auto;
+}
+
+.about > div {
+  display: block;
+  margin: 5vh auto;
+  padding: 30px;
   border-radius: 15px;
+  backdrop-filter: blur(2px);
   background: rgba(255, 255, 255, 0.1);
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 10vh auto;
-  backdrop-filter: blur(2px);
-  min-height: 50vh;
 }
 
-.about > h3 {
+.about h2 {
+  text-align: center;
+  margin-left: 22.5%;
+  width: 70%;
 }
 
-.about > p {
-  font-size: 1em;
-  font-weight: 400;
-  position: relative;
+.about-me-item {
+  margin: 50px auto;
+}
+
+.about-me-item h3 {
+  margin-left: 50px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px auto;
+}
+
+.arrows {
+  width: 10%;
+  height: 30px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+.about-me-item p {
+  width: 70%;
+  text-align: center;
+}
+
+.about-me-item span {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.about-me-item p {
+}
+
+.about-me-item {
+}
+
+.about-me-item {
+}
+
+.skillsHobbies {
+}
+
+.references {
 }

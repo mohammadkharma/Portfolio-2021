@@ -12,8 +12,6 @@ export default function Projects({ data }) {
   return (
     <Layout>
       <div className={styles.projectsHomepage}>
-        <h2>Projects</h2>
-        <h3>& websites I've created</h3>
         <div className={styles.projectsList}>
           {projects.map(project => (
             <Tilt key={project.id} className={styles.tilt}>
@@ -36,9 +34,10 @@ export default function Projects({ data }) {
             </Tilt>
           ))}
         </div>
-        <p>
-          Like what you see? Email me at <b>{contact}</b> for a talk!
-        </p>
+        <h3>
+          Like what you see? Email me at <a href={contact}>{contact}</a> for a
+          talk!
+        </h3>
       </div>
     </Layout>
   )

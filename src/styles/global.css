@@ -113,7 +113,6 @@ nav .links {
   width: 50%;
 }
 
-/* --------------------------------------------- */
 .dropbtn {
   border: none;
   outline: none;
@@ -150,8 +149,6 @@ nav .links {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/* --------------------------------------------- */
 
 nav #hidden {
   display: flex;

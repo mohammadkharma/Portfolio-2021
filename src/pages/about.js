@@ -13,7 +13,7 @@ export default function About() {
   return (
     <Layout>
       <div className={styles.about}>
-        <section className={styles.aboutMe}>
+        <section className={styles.aboutMe} id="aboutMe">
           <h2>Let us get to know eachothers!</h2>
           <div className={styles.aboutMeItem}>
             <h3>General Me</h3>
@@ -154,7 +154,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className={styles.skillsHobbies}>
+        <section className={styles.skillsHobbies} id="skillsHobbies">
           <h2>Skills & Hobbies</h2>
           <p>
             In the new Tech world, it's good to have some digital skills. I

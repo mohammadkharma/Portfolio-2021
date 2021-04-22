@@ -113,6 +113,46 @@ nav .links {
   width: 50%;
 }
 
+/* --------------------------------------------- */
+.dropbtn {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  background: none;
+}
+
+.dropbtn a {
+  text-align: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin: 5px -45px;
+  padding: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 1em !important;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(55, 55, 55);
+  text-decoration: none !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------------------------------------------- */
+
 nav #hidden {
   display: flex;
   position: fixed;

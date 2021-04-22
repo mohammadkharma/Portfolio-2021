@@ -28,20 +28,33 @@ export default function Navbar() {
         <Link to="/" activeClassName="active">
           Home
         </Link>
-        <Link to="/about" activeClassName="active">
-          About
-          <select>
-            <option>Simply Me</option>
-            <option>Skills & Hobbies</option>
-            <option href="#references">References</option>
-          </select>
-        </Link>
+
+        <div class="dropdown">
+          <button class="dropbtn">
+            <Link to="/about" activeClassName="active">
+              About
+            </Link>
+          </button>
+          <section class="dropdown-content">
+            <Link to="/about#aboutMe" activeClassName="active">
+              About Me
+            </Link>
+            <Link to="/about#references" activeClassName="active">
+              References
+            </Link>
+            <Link to="/about#skillsHobbies" activeClassName="active">
+              Skills & Hobbies
+            </Link>
+          </section>
+        </div>
+
         <Link to="/projects" activeClassName="active">
           Projects
         </Link>
         <Link to="/contact" activeClassName="active">
           Contact
         </Link>
+
         <div className="theme-toggle">
           <p>Dark mode:</p>
           <input

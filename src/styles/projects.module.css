@@ -30,6 +30,8 @@
   background: transparent !important;
   box-shadow: none !important;
   margin: auto !important;
+  transform-style: preserve-3d !important;
+  perspective: 1000px !important;
 }
 
 .project {
@@ -84,6 +86,7 @@ h4 {
   display: block;
   margin: 10px auto;
   border-radius: 25px;
+  transform: translateZ(175px);
 }
 
 .content h2 {

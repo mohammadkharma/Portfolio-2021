@@ -30,6 +30,6 @@ module.exports = {
     title: "Mohammad Kharma",
     description: "Portfolio 2021",
     copyright: "This website is copyright 2021",
-    contact: "example@something.com",
+    contact: "mohammad.kh.8688@gmail.com",
   },
 }

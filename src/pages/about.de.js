@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout"
+import Layout from "../components/Layout.de"
 import * as styles from "../styles/about.module.css"
 import resume from "../pdf/Lebenslauf_2021.pdf"
 import coverletter from "../pdf/coverletter.pdf"
@@ -14,25 +14,26 @@ export default function About() {
     <Layout>
       <div className={styles.about}>
         <section className={styles.aboutMe} id="aboutMe">
-          <h2>Let us get to know each other!</h2>
+          <h2>Lernen wir uns kennen!</h2>
           <div className={styles.aboutMeItem}>
-            <h3>General Me</h3>
+            <h3>General mich</h3>
             <div className={styles.aboutContent}>
               <div className={styles.arrows}></div>
               <p>
-                As the first career path, my life was about Sports, Basketball
-                specifically. Being a player, a coach, and a teacher has helped
-                me out building my flexible, responsible, and mature
-                personality. In such a field, you get to work with different
-                people of different ages and you gain experience in working
-                under time pressure and harder circumstances. After that, and
-                because of injury, I crossed the bridge from sports to business
-                field and worked as a Sales Manager / Manager Assistant, till
-                Fate wanted me to leave my home country and change my career.
-                And here I am today, living a new dream as a Web Developer based
+                Als erster Karriereweg ging es in meinem Leben speziell um
+                Sport, Basketball. Als Spieler, Trainer und Lehrer habe ich
+                meine flexible, verantwortungsbewusste und reife Persönlichkeit
+                aufgebaut. In einem solchen Bereich können Sie mit verschiedenen
+                Menschen unterschiedlichen Alters arbeiten und Erfahrungen in
+                der Arbeit unter Zeitdruck und unter schwierigeren Umständen
+                sammeln. Danach und wegen einer Verletzung überquerte ich die
+                Brücke vom Sport zum Geschäftsfeld und arbeitete als
+                Verkaufsleiter / Managerassistent, bis das Schicksal wollte,
+                dass ich mein Heimatland verlasse und meine Karriere ändere. Und
+                hier bin ich heute und lebe einen neuen Traum als Webentwickler
                 in Berlin.
                 <span>
-                  "You miss 100 percent of the shots you never take."
+                  "Sie verpassen 100 Prozent der Aufnahmen, die Sie nie machen."
                   <br />
                   Wayne Gretzky
                 </span>
@@ -40,18 +41,19 @@ export default function About() {
             </div>
           </div>
           <div className={styles.aboutMeItem}>
-            <h3>Current Me</h3>
+            <h3>Aktuelles mich</h3>
             <div className={styles.aboutContent}>
               <div className={styles.arrows}></div>
               <p>
-                A fast-learning web developer who is passionate about clean code
-                and challenging problem-solving. Always up to date with new
-                technologies and looking for modern and clear designs. Combine
-                this with the comfort of working across the front-end to deliver
-                exceptional customer-facing products.
+                Ein schnell lernender Webentwickler, der sich für sauberen Code
+                und herausfordernde Problemlösungen begeistert. Immer auf dem
+                neuesten Stand mit neuen Technologien und auf der Suche nach
+                modernen und klaren Designs. Kombinieren Sie dies mit dem
+                Komfort, über das Front-End hinweg zu arbeiten, um
+                außergewöhnliche Produkte für Kunden zu liefern.
                 <span>
-                  “Perfection is not attainable, but if we chase perfection we
-                  can catch excellence.”
+                  "Perfektion ist nicht erreichbar, aber wenn wir Perfektion
+                  verfolgen, können wir Spitzenleistungen erzielen."
                   <br />
                   Vince Lombardi
                 </span>
@@ -59,17 +61,19 @@ export default function About() {
             </div>
           </div>
           <div className={styles.aboutMeItem}>
-            <h3>Tomorrow Me</h3>
+            <h3>Morgen mich</h3>
             <div className={styles.aboutContent}>
               <div className={styles.arrows}></div>
               <p>
-                It is important on a professional level to be an ambitious
-                person. Having ambition not only makes people work harder but
-                makes them a lot more likely to excel at what they do in their
-                job. And like most people, I would like to obtain a role that
-                has more responsibility in the future.
+                Auf professioneller Ebene ist es wichtig, eine ehrgeizige Person
+                zu sein. Ehrgeiz führt nicht nur dazu, dass die Menschen härter
+                arbeiten, sondern es ist auch viel wahrscheinlicher, dass sie
+                sich in dem auszeichnen, was sie in ihrer Arbeit tun. Und wie
+                die meisten Menschen möchte ich eine Rolle erhalten, die in
+                Zukunft mehr Verantwortung trägt.
                 <span>
-                  "The best way to predict the future is to create it."
+                  "Der beste Weg, die Zukunft vorherzusagen, besteht darin, sie
+                  zu schaffen."
                   <br />
                   Abraham Lincoln
                 </span>
@@ -79,75 +83,75 @@ export default function About() {
         </section>
 
         <section className={styles.references} id="references">
-          <h2>References</h2>
+          <h2>Verweise</h2>
           <div>
-            <h3>Resume & Coverletter</h3>
+            <h3>Lebenslauf & Anschreiben</h3>
             <div className={styles.referencesContent}>
               <div>
-                <p>Resume</p>
+                <p>Lebenslauf</p>
                 <embed download src={resume} type="application/pdf"></embed>
                 <a href={resume} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
               <div>
-                <p>General Coneverletter</p>
+                <p>General Anschreiben</p>
                 <embed
                   download
                   src={coverletter}
                   type="application/pdf"
                 ></embed>
                 <a href={coverletter} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
             </div>
           </div>
           <div>
-            <h3>Jobs references</h3>
+            <h3>Jobreferenzen</h3>
             <div className={styles.referencesContent}>
               <div>
-                <p>Internship - Web Development</p>
+                <p>Praktikum - Webentwicklung</p>
                 <embed download src={sky} type="application/pdf"></embed>
                 <a href={sky} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
               <div>
-                <p>Sales Manager</p>
+                <p>Verkaufsleiter</p>
                 <embed download src={petra} type="application/pdf"></embed>
                 <a href={petra} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
               <div>
-                <p>Assistant</p>
+                <p>Assistent</p>
                 <embed download src={icc} type="application/pdf"></embed>
                 <a href={icc} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
             </div>
           </div>
           <div>
-            <h3>Certificates</h3>
+            <h3>Zertifikate</h3>
             <div className={styles.referencesContent}>
               <div>
-                <p>Further Education - Web Development</p>
+                <p>Weiterbildung - Webentwicklung</p>
                 <embed
                   download
                   src={certificate}
                   type="application/pdf"
                 ></embed>
                 <a href={certificate} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
               <div>
-                <p>B1 Level - German Language</p>
+                <p>B1 Level - Deutsche Sprache</p>
                 <embed download src={b1} type="application/pdf"></embed>
                 <a href={b1} target="_blank" rel="noreferrer">
-                  open external ↗
+                  extern öffnen ↗
                 </a>
               </div>
             </div>
@@ -155,12 +159,12 @@ export default function About() {
         </section>
 
         <section className={styles.skillsHobbies} id="skillsHobbies">
-          <h2>Skills & Hobbies</h2>
+          <h2>Fähigkeiten & Hobbys</h2>
           <p>
-            In the new Tech world, it's good to have some digital skills. I
-            improved mine in MS Office, Photoshop, and Video Edit. As for
-            Hobbies, Basketball comes first, followed by Table Tennis, Reading,
-            and Playing Digital Games.
+            In der neuen Tech-Welt ist es gut, über digitale Fähigkeiten zu
+            verfügen. Ich habe meine in MS Office, Photoshop und Video Edit
+            verbessert. Bei den Hobbys steht Basketball an erster Stelle,
+            gefolgt von Tischtennis, Lesen und Spielen digitaler Spiele.
           </p>
         </section>
       </div>

@@ -5,7 +5,7 @@ import { HiTranslate } from "react-icons/hi"
 
 export default function Navbar() {
   const data = useStaticQuery(graphql`
-    query SiteInfo {
+    query SiteInfoDe {
       site {
         siteMetadata {
           title
@@ -30,8 +30,8 @@ export default function Navbar() {
           <HiTranslate />
         </button>
         <section className="dropdown-content">
-          <Link to="/index.de" activeClassName="active">
-            Deutch
+          <Link to="/" activeClassName="active">
+            English
           </Link>
           <Link to="/index.ar" activeClassName="active">
             العربية
@@ -40,38 +40,38 @@ export default function Navbar() {
       </div>
 
       <div className="links" id={showLinks ? "hidden" : ""}>
-        <Link to="/" activeClassName="active">
+        <Link to="/index.de" activeClassName="active">
           Home
         </Link>
 
         <div className="dropdown-theme">
           <button className="dropbtn">
-            <Link to="/about" activeClassName="active">
-              About
+            <Link to="/about.de" activeClassName="active">
+              Über
             </Link>
           </button>
           <section className="dropdown-content">
-            <Link to="/about#aboutMe" activeClassName="active">
-              About Me
+            <Link to="/about.de#aboutMe" activeClassName="active">
+              Über mich
             </Link>
-            <Link to="/about#references" activeClassName="active">
-              References
+            <Link to="/about.de#references" activeClassName="active">
+              Verweise
             </Link>
-            <Link to="/about#skillsHobbies" activeClassName="active">
-              Skills & Hobbies
+            <Link to="/about.de#skillsHobbies" activeClassName="active">
+              Fähigkeiten & Hobbys
             </Link>
           </section>
         </div>
 
-        <Link to="/projects" activeClassName="active">
-          Projects
+        <Link to="/projects/index.de" activeClassName="active">
+          Projekte
         </Link>
-        <Link to="/contact" activeClassName="active">
-          Contact
+        <Link to="/contact.de" activeClassName="active">
+          kontakt
         </Link>
 
         <div className="theme-toggle">
-          <p>Dark mode:</p>
+          <p>Dunkler Modus:</p>
           <input
             onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
             id="checkbox"
@@ -80,7 +80,7 @@ export default function Navbar() {
             readOnly={true}
             checked={state.isDark ? true : false}
           />
-          <p>{state.isDark ? "ON" : "OFF"}</p>
+          <p>{state.isDark ? "AN" : "AUS"}</p>
         </div>
       </div>
 

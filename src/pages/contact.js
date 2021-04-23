@@ -1,22 +1,69 @@
-import React from "react"
+import React, { useState } from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/contact.module.css"
 
 export default function Contact() {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+  })
+
+  const encode = data => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&")
+  }
+
+  const handleChange = e => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    })
+  }
+
+  const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.formState }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+
+    e.preventDefault()
+  }
+
   return (
     <Layout>
       <div className={styles.contact}>
-        <h2>Contact</h2>
-        <h3>Lorem ipsum dolor sit amet</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <form
+          onSubmit={handleSubmit}
+          name="contact"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <label htmlFor="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            onChange={handleChange}
+            value={formState.name}
+            placeholder="Enter your name"
+          />
+          <label htmlFor="email">Name</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={handleChange}
+            value={formState.email}
+            placeholder="Enter your email"
+          />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </Layout>
   )

@@ -29,13 +29,13 @@ export default function Navbar() {
           Home
         </Link>
 
-        <div class="dropdown">
-          <button class="dropbtn">
+        <div className="dropdown">
+          <button className="dropbtn">
             <Link to="/about" activeClassName="active">
               About
             </Link>
           </button>
-          <section class="dropdown-content">
+          <section className="dropdown-content">
             <Link to="/about#aboutMe" activeClassName="active">
               About Me
             </Link>

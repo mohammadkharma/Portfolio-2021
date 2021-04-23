@@ -5,24 +5,67 @@
   background: rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 10vh auto;
-  backdrop-filter: blur(2px);
+  margin: 5vh auto;
+  backdrop-filter: blur(7px);
   min-height: 50vh;
 }
 
-.contact > h2 {
-  font-size: 3em;
-  margin-top: 80px;
+.contact form {
+  width: 70%;
+  display: block;
+  margin: auto;
 }
 
-.contact > h3 {
-  font-size: 2em;
-  font-weight: 400;
+.contact form label {
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  display: block;
 }
 
-.contact > p {
-  font-size: 1em;
-  font-weight: 400;
-  margin-top: 40px;
+.contact form input {
+  padding: 10px;
+  margin: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  outline: none;
+  display: block;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+.label-name,
+.input-name {
+  display: inline-block !important;
+  width: 50% !important;
+}
+
+.contact form button {
+  display: block;
+  background: #0005;
+  border: none;
   padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.contact form input.message {
+  min-height: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+  .label-name,
+  .input-name {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .contact form label {
+    text-align: center;
+  }
 }

@@ -4,7 +4,8 @@ import * as styles from "../styles/contact.module.css"
 
 export default function Contact() {
   const [formState, setFormState] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     message: "",
   })
@@ -36,7 +37,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <div className={styles.contact}>
+      <section className={styles.contact}>
         <form
           onSubmit={handleSubmit}
           name="contact"
@@ -45,14 +46,29 @@ export default function Contact() {
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <label htmlFor="name">Name</label>
+          <label htmlFor="firstName" className={styles.labelName}>
+            First Name
+          </label>
           <input
-            id="name"
-            name="name"
+            id="firstName"
+            name="firstName"
             type="text"
             onChange={handleChange}
-            value={formState.name}
-            placeholder="Enter your name"
+            value={formState.firstName}
+            placeholder="Enter your first name"
+            className={styles.inputName}
+          />
+          <label htmlFor="lastName" className={styles.labelName}>
+            Last Name
+          </label>
+          <input
+            id="lastName"
+            name="lastName"
+            type="text"
+            onChange={handleChange}
+            value={formState.lastName}
+            placeholder="Enter your last name"
+            className={styles.inputName}
           />
           <label htmlFor="email">Email</label>
           <input
@@ -71,10 +87,11 @@ export default function Contact() {
             onChange={handleChange}
             value={formState.message}
             placeholder="Enter your message"
+            className={styles.message}
           />
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </section>
     </Layout>
   )
 }

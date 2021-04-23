@@ -6,6 +6,7 @@ export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
+    message: "",
   })
 
   const encode = data => {
@@ -61,6 +62,15 @@ export default function Contact() {
             onChange={handleChange}
             value={formState.email}
             placeholder="Enter your email"
+          />
+          <label htmlFor="message">Name</label>
+          <input
+            id="message"
+            name="message"
+            type="email"
+            onChange={handleChange}
+            value={formState.message}
+            placeholder="Enter your message"
           />
           <button type="submit">Submit</button>
         </form>

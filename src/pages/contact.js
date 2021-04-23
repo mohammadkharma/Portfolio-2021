@@ -54,7 +54,7 @@ export default function Contact() {
             value={formState.name}
             placeholder="Enter your name"
           />
-          <label htmlFor="email">Name</label>
+          <label htmlFor="email">Email</label>
           <input
             id="email"
             name="email"
@@ -63,11 +63,11 @@ export default function Contact() {
             value={formState.email}
             placeholder="Enter your email"
           />
-          <label htmlFor="message">Name</label>
+          <label htmlFor="message">Message</label>
           <input
             id="message"
             name="message"
-            type="email"
+            type="text"
             onChange={handleChange}
             value={formState.message}
             placeholder="Enter your message"

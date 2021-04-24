@@ -23,14 +23,7 @@ export default function Layout({ children }) {
                 ? theme.dark.background
                 : theme.light.background};
             }
-            body::before {
-              display: ${state.isDark
-                ? theme.display.none
-                : theme.display.block};
-            }
-            body::after {
-              display: ${state.isDark ? "block" : "none"};
-            }
+
             nav .hamburger .line {
               background: ${state.isDark
                 ? theme.light.background

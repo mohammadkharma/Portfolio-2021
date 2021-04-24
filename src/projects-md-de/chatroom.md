@@ -1,5 +1,5 @@
 ---
-lang: EN
+lang: DE
 title: Chatroom
 stack: JAVASCRIPT HTML & CSS
 slug: Chatroom-App
@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p5-banner.png
 
 ### Firebase
 
-A realtime chat app using firebase as a database. Three JAVASCRIPT files were created to handle the database, the UI, and to combine them together.
+Eine Echtzeit-Chat-App, die Firebase als Datenbank verwendet. Drei JAVASCRIPT-Dateien wurden erstellt, um die Datenbank und die Benutzeroberfläche zu verwalten und miteinander zu kombinieren.

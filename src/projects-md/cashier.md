@@ -1,4 +1,5 @@
 ---
+lang: EN
 title: Cashier
 stack: JAVASCRIPT HTML & CSS
 slug: Cashier-Problem

@@ -1,4 +1,5 @@
 ---
+lang: EN
 title: Guessing Game
 stack: JAVASCRIPT HTML & CSS
 slug: Guessing-Game

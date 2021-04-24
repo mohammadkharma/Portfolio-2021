@@ -1,6 +1,6 @@
 ---
-lang: EN
-title: Clinic
+lang: DE
+title: Klinik
 stack: JAVASCRIPT HTML & CSS
 slug: Clinic
 link: https://mohammadkharma.github.io/DOM/projects/pharmakopoeia_laboratories/
@@ -9,4 +9,4 @@ thumb: ../images/thumbs/clinic.jpg
 featuredImg: ../images/featured/p5-banner.png
 ---
 
-This project was a template website for a doctor friend that has a laboratories and a clinic. The aim was to work on a complete project from styles to data handling and deployment as well.
+Dieses Projekt war eine Vorlagenwebsite für einen Arztfreund, der ein Labor und eine Klinik hat. Ziel war es, an einem vollständigen Projekt zu arbeiten, das von Stilen über die Datenverarbeitung bis hin zur Bereitstellung reicht.

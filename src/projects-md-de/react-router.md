@@ -1,5 +1,5 @@
 ---
-lang: EN
+lang: DE
 title: React Router
 stack: JAVASCRIPT HTML & CSS
 slug: React-Router
@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p4-banner.png
 
 ### REACT
 
-The goal of this project was to practice React Router. AXIOS is used as well in addition to a JSON placeholder to request an API.
+Das Ziel dieses Projekts war es, React Router zu üben. Neben einem JSON-Platzhalter wird auch AXIOS verwendet, um eine API anzufordern.

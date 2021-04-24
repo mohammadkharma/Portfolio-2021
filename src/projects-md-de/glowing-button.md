@@ -1,6 +1,6 @@
 ---
-lang: EN
-title: Themes
+lang: DE
+title: Themen
 stack: HTML & CSS
 slug: glowing-button-themes
 link: https://epic-benz-9f533b.netlify.app/
@@ -9,4 +9,4 @@ thumb: ../images/thumbs/glow.jpg
 featuredImg: ../images/featured/p3-banner.png
 ---
 
-A simple glowing checlbox button that switch between dark and light theme. The deployment was on netflify.
+Eine einfache leuchtende Kontrollkästchen-Schaltfläche, die zwischen dunklen und hellen Themen wechselt. Die Bereitstellung erfolgte auf netlify.

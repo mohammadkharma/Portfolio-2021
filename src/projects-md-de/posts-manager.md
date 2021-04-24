@@ -1,5 +1,5 @@
 ---
-lang: EN
+lang: DE
 title: Posts Manager
 stack: JAVASCRIPT HTML & CSS
 slug: Posts-Manager
@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p2-banner.png
 
 ### REACT
 
-A simple Posting app with authentication to signup and signin. The project is based on React and google firebase for data. The styles are initial as the focus was on the authentication.
+Eine einfache Posting-App mit Authentifizierung zum Anmelden und Anmelden. Das Projekt basiert auf React and Googles Firebase for Data. Die Stile sind initial, da der Schwerpunkt auf der Authentifizierung lag.

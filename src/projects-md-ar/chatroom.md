@@ -1,6 +1,6 @@
 ---
-lang: EN
-title: Chatroom
+lang: AR
+title: غرفة الدردشة
 stack: JAVASCRIPT HTML & CSS
 slug: Chatroom-App
 link: https://mohammadkharma.github.io/DOM/projects/real_time_chatroom/
@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p5-banner.png
 
 ### Firebase
 
-A realtime chat app using firebase as a database. Three JAVASCRIPT files were created to handle the database, the UI, and to combine them together.
+تطبيق دردشة في الوقت الفعلي يستخدم Firebase كقاعدة بيانات. تم إنشاء ثلاثة ملفات JAVASCRIPT للتعامل مع قاعدة البيانات وواجهة المستخدم ودمجها معًا.

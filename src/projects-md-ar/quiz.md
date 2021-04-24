@@ -1,6 +1,6 @@
 ---
-lang: EN
-title: Quiz
+lang: AR
+title: اختبار
 stack: JAVASCRIPT HTML & CSS
 slug: Quiz-App
 link: https://mohammadkharma.github.io/DOM/projects/quiz_app/main.html
@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p5-banner.png
 
 ### JAVASCRIPT
 
-A Quiz templte that allow to choose from the giving answers and then recieve a percentage grade with some animation.
+نموذج اختبار يسمح بالاختيار من بين الإجابات ثم الحصول على درجة مئوية مع بعض الرسوم المتحركة.

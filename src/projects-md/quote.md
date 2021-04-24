@@ -1,4 +1,5 @@
 ---
+lang: EN
 title: Quotes
 stack: JAVASCRIPT HTML & CSS
 slug: Quote-Of-The-Day

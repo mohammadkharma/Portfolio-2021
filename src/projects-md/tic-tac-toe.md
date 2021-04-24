@@ -1,4 +1,5 @@
 ---
+lang: EN
 title: Tic Tac Toe
 stack: JAVASCRIPT HTML & CSS
 slug: Tic-Tac-Toe-Game

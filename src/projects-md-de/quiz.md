@@ -1,5 +1,5 @@
 ---
-lang: EN
+lang: DE
 title: Quiz
 stack: JAVASCRIPT HTML & CSS
 slug: Quiz-App
@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p5-banner.png
 
 ### JAVASCRIPT
 
-A Quiz templte that allow to choose from the giving answers and then recieve a percentage grade with some animation.
+Eine Quizvorlage, mit der Sie aus den Antworten auswählen und dann mit einigen Animationen eine prozentuale Note erhalten können.

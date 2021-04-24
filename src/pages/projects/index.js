@@ -54,7 +54,9 @@ export default function Projects({ data }) {
 
 export const query = graphql`
   query ProjectsPage {
-    projects: allMarkdownRemark {
+    projects: allMarkdownRemark(
+      filter: { frontmatter: { lang: { eq: "EN" } } }
+    ) {
       nodes {
         html
         frontmatter {

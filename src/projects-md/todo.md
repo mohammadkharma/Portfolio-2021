@@ -1,4 +1,5 @@
 ---
+lang: EN
 title: ToDo
 stack: JAVASCRIPT HTML & CSS
 slug: ToDo-App

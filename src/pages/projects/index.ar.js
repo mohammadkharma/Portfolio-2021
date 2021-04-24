@@ -1,4 +1,5 @@
-import { graphql, Link } from "gatsby"
+// import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import React from "react"
 import Layout from "../../components/Layout.ar"
 import * as styles from "../../styles/projects.module.css"
@@ -23,19 +24,28 @@ export default function Projects({ data }) {
                   />
                   <h2>{project.frontmatter.title}</h2>
                   <h4>{project.frontmatter.stack}</h4>
-                  <Link
+                  {/* <Link
                     className={styles.btn}
                     to={"/projects-md/" + project.frontmatter.slug}
                   >
-                    اقرأ أكثر
-                  </Link>
+                    read more ⬇
+                  </Link> */}
+                  <p className={styles.readMore}>⬇ اقرأ أكثر</p>
+                </div>
+                <div className={styles.content}>
+                  <div dangerouslySetInnerHTML={{ __html: project.html }} />
+                  <p>
+                    انقر <a href={project.frontmatter.link}> هنا </a> لزيارة
+                    الموقع
+                  </p>
                 </div>
               </div>
             </Tilt>
           ))}
         </div>
         <h3>
-          هل تحب ما تراه؟ راسلني على <a href={contact}>{contact}</a> !للتحدث
+          هل تحب ما تراه؟ أرسل لي على <a href={contact}>{contact}</a> للحصول على
+          دردشة عبر البريد الإلكتروني
         </h3>
       </div>
     </Layout>
@@ -46,10 +56,12 @@ export const query = graphql`
   query ProjectsPageAr {
     projects: allMarkdownRemark {
       nodes {
+        html
         frontmatter {
           slug
           stack
           title
+          link
           thumb {
             childImageSharp {
               fluid {

@@ -75,8 +75,13 @@ export default function Layout({ children }) {
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }
-            .projects-module--project--1zdcJ::before {
-              display: ${state.isDark ? "block" : "none"};
+            .projects-module--project--1zdcJ:hover {
+              box-shadow: ${state.isDark
+                ? "0px 0px 20px #63cdff, 0px 0px 20px #63cdff, 0px 0px 20px #63cdff"
+                : "0px 10px 50px rgba(0, 0, 0, 1)"};
+              background: ${state.isDark
+                ? "#63ceffe0"
+                : "rgba(255, 255, 255, 0.9);"};
             }
             nav h1.dark-theme {
               display: ${state.isDark ? "block" : "none"};

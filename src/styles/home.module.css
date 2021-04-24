@@ -94,3 +94,9 @@
     font-size: 1.5em;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .header {
+    margin: 0 auto;
+  }
+}

@@ -32,7 +32,7 @@ export default function Navbar() {
           الصفحة الرئيسية
         </Link>
 
-        <div className="dropdown-theme">
+        <div className="dropdown-about">
           <button className="dropbtn">
             <Link to="/about.ar" activeClassName="active">
               حول

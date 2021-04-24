@@ -145,18 +145,18 @@ nav .links {
   min-width: 50%;
 }
 
-.dropdown-theme .dropbtn {
+.dropdown-about .dropbtn {
   border: none;
   outline: none;
   font-size: 1em;
   background: none;
 }
 
-.dropdown-theme .dropbtn a {
+.dropdown-about .dropbtn a {
   text-align: left;
 }
 
-.dropdown-theme .dropdown-content {
+.dropdown-about .dropdown-content {
   display: none;
   position: absolute;
   margin: 5px -45px;
@@ -166,19 +166,19 @@ nav .links {
   z-index: 1;
 }
 
-.dropdown-theme .dropdown-content a {
+.dropdown-about .dropdown-content a {
   padding: 10px;
   text-decoration: none;
   display: block;
   font-size: 1em !important;
 }
 
-.dropdown-theme .dropdown-content a:hover {
+.dropdown-about .dropdown-content a:hover {
   background-color: #63cdff;
   text-decoration: none !important;
 }
 
-.dropdown-theme:hover .dropdown-content {
+.dropdown-about:hover .dropdown-content {
   display: block;
 }
 
@@ -198,13 +198,13 @@ nav #hidden a {
   text-align: center;
 }
 
-nav #hidden .dropdown-theme {
+nav #hidden .dropdown-about {
   text-align: center;
   margin: 0 auto;
 }
 
-nav #hidden .dropdown-theme:hover .dropdown-content {
-  margin: -30px -65px;
+nav #hidden .dropdown-about:hover .dropdown-content {
+  margin: -30px -45px;
   padding: 0;
 }
 
@@ -317,7 +317,7 @@ input:checked[type="checkbox"]::after {
 
 nav .hamburger {
   position: absolute;
-  top: 5vh;
+  top: 35px;
   right: 9vw;
   background: none;
   border: none;
@@ -434,5 +434,15 @@ footer p {
   nav #hidden .theme-toggle {
     display: block;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  nav .dropdown-lang {
+    margin-right: 10px;
+  }
+  nav h1.dark-theme,
+  nav h1.light-theme {
+    font-size: 1.2em;
   }
 }

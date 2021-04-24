@@ -44,7 +44,7 @@ export default function Navbar() {
           Home
         </Link>
 
-        <div className="dropdown-theme">
+        <div className="dropdown-about">
           <button className="dropbtn">
             <Link to="/about" activeClassName="active">
               About

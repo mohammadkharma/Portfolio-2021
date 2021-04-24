@@ -169,6 +169,7 @@ nav .links {
 .dropdown-about .dropdown-content a {
   padding: 10px;
   text-decoration: none;
+  text-align: center;
   display: block;
   font-size: 1em !important;
 }

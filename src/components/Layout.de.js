@@ -44,10 +44,8 @@ export default function Layout({ children }) {
               margin-bottom: 10px;
             }
             nav .links a.active {
-              text-shadow: ${state.isDark
-                  ? "0 0 10px #63cdff"
-                  : "0 0 30px #000"},
-                ${state.isDark ? "0 0 10px #63cdff" : "0 0 30px #000"};
+              text-shadow: ${state.isDark ? "0 0 10px #63cdff" : "none"},
+                ${state.isDark ? "0 0 10px #63cdff" : "none"};
               -webkit-box-reflect: ${state.isDark
                 ? "below -140% linear-gradient(#0003, #000)"
                 : "none"};
@@ -60,9 +58,7 @@ export default function Layout({ children }) {
             }
             nav #hidden a.active {
               border-bottom: none;
-              text-shadow: ${state.isDark
-                  ? "0 0 10px #63cdff"
-                  : theme.light.borderColor},
+              text-shadow: ${state.isDark ? "0 0 10px #63cdff" : "none"},
                 ${state.isDark ? "0 0 20px #63cdff" : "none"},
                 ${state.isDark ? "0 0 40px #63cdff" : "none"},
                 ${state.isDark ? "0 0 80px #63cdff" : "none"},
@@ -75,8 +71,13 @@ export default function Layout({ children }) {
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }
-            .projects-module--project--1zdcJ::before {
-              display: ${state.isDark ? "block" : "none"};
+            .projects-module--project--1zdcJ:hover {
+              box-shadow: ${state.isDark
+                ? "0px 0px 20px #63cdff, 0px 0px 20px #63cdff, 0px 0px 20px #63cdff"
+                : "0px 10px 50px rgba(0, 0, 0, 1)"};
+              background: ${state.isDark
+                ? "#63ceffe0"
+                : "rgba(255, 255, 255, 0.9);"};
             }
             nav h1.dark-theme {
               display: ${state.isDark ? "block" : "none"};

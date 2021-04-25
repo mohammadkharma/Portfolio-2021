@@ -483,10 +483,14 @@ footer p {
 
 @media only screen and (max-width: 450px) {
   nav .dropdown-lang {
-    margin-right: 10px;
+    margin-right: -5px;
+    font-size: 0.7em;
   }
   nav h1.dark-theme,
   nav h1.light-theme {
-    font-size: 1.2em;
+    font-size: 1.1em;
+  }
+  nav .hamburger .line {
+    height: 3px;
   }
 }

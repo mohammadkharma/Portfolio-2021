@@ -61,6 +61,12 @@ export default function Layout({ children }) {
                 : "none"};
               text-decoration: underline;
             }
+            div.contact-module--iconsContainer--1HzwP {
+              display: ${state.isDark ? "none" : "block"};
+            }
+            div.contact-module--iconsContainerDark--2V-Ly {
+              display: ${state.isDark ? "block" : "none"};
+            }
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }

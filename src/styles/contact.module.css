@@ -1,3 +1,127 @@
+.iconsContainer {
+  margin: 30px auto;
+  width: 350px;
+  border-radius: 15px;
+  display: flex;
+  background-color: rgb(214, 214, 214);
+}
+
+.iconsContainer button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(214, 214, 214);
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.iconsContainer button .img {
+  border-radius: 15px;
+  font-size: 40px !important;
+}
+
+.iconsContainer button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.iconsContainer button:hover .img {
+  font-size: 42px !important;
+}
+
+.iconsContainer button:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(214, 214, 214);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconsContainer button:hover::before {
+  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iconsContainer button:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
+}
+
+.iconsContainer button .img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+/* ------------------------------------------------- */
+
+.iconsContainerDark {
+  margin: 30px auto;
+  width: 350px;
+  display: flex;
+  border-radius: 15px;
+  background-color: rgb(114, 114, 114);
+}
+
+.iconsContainerDark button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(114, 114, 114);
+  box-shadow: 5px 5px 10px #212121, -5px -5px 10px #9d9d9d;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.iconsContainerDark button .img {
+  border-radius: 15px;
+  font-size: 40px !important;
+}
+
+.iconsContainerDark button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.iconsContainerDark button:hover .img {
+  font-size: 42px !important;
+}
+
+.iconsContainerDark button:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(114, 114, 114);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconsContainerDark button:hover::before {
+  box-shadow: inset -7px -7px 20px 0 #9d9d9d,
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iconsContainerDark button:active {
+  box-shadow: inset 1px 1px 2px #9d9d9d, inset -1px -1px 2px #212121;
+}
+
+.iconsContainerDark button .img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+/* ------------------------------------------------- */
+
 .contact {
   text-align: center;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -5,7 +129,7 @@
   background: rgba(255, 255, 255, 0.1);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  margin: 5vh auto;
+  margin: 10vh auto;
   backdrop-filter: blur(7px);
   min-height: 50vh;
 }
@@ -33,6 +157,7 @@
   border-radius: 15px;
   outline: none;
   display: block;
+  color: black;
   border: none;
   width: 100%;
   text-align: center;
@@ -46,10 +171,11 @@
 
 .contact form button {
   display: block;
-  background: #0005;
+  background: #63cdff;
   border: none;
   padding: 20px;
   border-radius: 10px;
+  color: black;
   margin: 20px auto;
   cursor: pointer;
 }

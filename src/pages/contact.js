@@ -1,6 +1,9 @@
 import React, { useState } from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/contact.module.css"
+import { FaXing } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
 
 export default function Contact() {
   const [formState, setFormState] = useState({
@@ -91,6 +94,43 @@ export default function Contact() {
           />
           <button type="submit">Submit</button>
         </form>
+        <div className={styles.iconsContainer}>
+          <button>
+            <a href="https://github.com/mohammadkharma">
+              <FaGithub className={styles.img} />
+              {/* <img src={GH} alt="Github" /> */}
+            </a>
+          </button>
+          <button>
+            <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
+              <FaLinkedin className={styles.img} />
+              {/* <img src={LI} alt="LinkedIn" /> */}
+            </a>
+          </button>
+          <button>
+            <a href="https://www.xing.com/profile/Mohammad_Kharma2">
+              <FaXing className={styles.img} />
+              {/* <img src={XG} alt="Xing" /> */}
+            </a>
+          </button>
+        </div>
+        <div className={styles.iconsContainerDark}>
+          <button>
+            <a href="https://github.com/mohammadkharma">
+              <FaGithub className={styles.img} />
+            </a>
+          </button>
+          <button>
+            <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
+              <FaLinkedin className={styles.img} />
+            </a>
+          </button>
+          <button>
+            <a href="https://www.xing.com/profile/Mohammad_Kharma2">
+              <FaXing className={styles.img} />
+            </a>
+          </button>
+        </div>
       </section>
     </Layout>
   )

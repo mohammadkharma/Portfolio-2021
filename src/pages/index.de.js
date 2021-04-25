@@ -17,7 +17,7 @@ export default function Home({ data }) {
           <h2>Entwickeln</h2>
           <h3>Entwerfen & Bereitstellen</h3>
           <p>Webentwickler & Designer mit Sitz in Berlin</p>
-          <Link className={styles.btn} to="/projects">
+          <Link className={styles.btn} to="/projects/index.de">
             Meine Projekte
           </Link>
         </div>

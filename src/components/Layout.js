@@ -84,8 +84,21 @@ export default function Layout({ children }) {
             nav h1.light-theme {
               display: ${state.isDark ? "none" : "block"};
             }
+
+            .sun {
+              display: ${state.isDark ? "none" : "block"};
+            }
+            .moon {
+              display: ${state.isDark ? "block" : "none"};
+            }
           `}
         />
+        <div className="moon">
+          <div></div>
+        </div>
+        <div className="sun">
+          <div></div>
+        </div>
         {children}
       </div>
       <footer>

@@ -17,7 +17,7 @@ export default function Home({ data }) {
           <h2>تطوير</h2>
           <h3>تصميم ونشر</h3>
           <p>مطور ومصمم ويب مقره في برلين</p>
-          <Link className={styles.btn} to="/projects">
+          <Link className={styles.btn} to="/projects/index.ar">
             مشاريعي
           </Link>
         </div>

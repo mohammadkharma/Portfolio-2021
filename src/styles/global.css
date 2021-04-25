@@ -20,6 +20,7 @@ body {
 /* body::before for light mode theme only */
 body::before {
   content: "";
+  display: none;
   position: fixed;
   bottom: 15vh;
   right: 2vw;
@@ -56,6 +57,7 @@ body::before {
 
 /* body::after for dark mode theme only */
 body::after {
+  display: none;
   content: "";
   position: fixed;
   top: 15vh;
@@ -94,6 +96,101 @@ body::after {
 .layout {
   max-width: 90vw;
   margin: 0 auto;
+}
+
+/* moon - son */
+.moon {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 0;
+  z-index: -1;
+  left: 2vw;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 0 20px 20px #000 inset, 0 0 20px rgb(114, 114, 114);
+  animation: moon 40s ease-in-out infinite;
+}
+
+.moon::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-color: black;
+  border-radius: 50%;
+  box-shadow: -40px -40px 50px 2px #000 inset, 0 0 20px 2px;
+}
+
+.moon > div {
+  width: 200%;
+  height: 100%;
+  background: url(../../static/moon.jpg);
+  animation: spin 10s linear alternate infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes moon {
+  25% {
+    top: 60vh;
+    left: 2vw;
+    width: 200px;
+    height: 200px;
+  }
+
+  50% {
+    top: 50vh;
+    left: 75vw;
+    width: 300px;
+    height: 300px;
+  }
+
+  75% {
+    top: 20vh;
+    left: 85vw;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.sun {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  background: #ffde00;
+  border-radius: 50%;
+  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+    0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
+  animation: moon 40s ease-in-out infinite;
+  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear,
+    moon 40s ease-in-out infinite;
+}
+
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+}
+
+@keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0px #ffde0080, 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
+      0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
+  }
+  100% {
+    box-shadow: 0 0 0 0px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 40px #ffde0020,
+      0 0 0 60px #ffde0010, 0 0 0 80px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
 }
 
 /* nav */

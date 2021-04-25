@@ -191,6 +191,11 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .iconsContainer,
+  .iconsContainerDark {
+    width: 150px;
+  }
+
   .label-name,
   .input-name {
     display: block !important;

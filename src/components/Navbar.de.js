@@ -55,7 +55,7 @@ export default function Navbar() {
               Über mich
             </Link>
             <Link to="/about.de#references" activeClassName="active">
-              Verweise
+              Referenzen
             </Link>
             <Link to="/about.de#skillsHobbies" activeClassName="active">
               Fähigkeiten & Hobbys
@@ -67,7 +67,7 @@ export default function Navbar() {
           Projekte
         </Link>
         <Link to="/contact.de" activeClassName="active">
-          kontakt
+          Kontakt
         </Link>
 
         <div className="theme-toggle">

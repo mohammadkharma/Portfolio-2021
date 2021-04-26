@@ -23,14 +23,6 @@ export default function Layout({ children }) {
                 ? theme.dark.background
                 : theme.light.background};
             }
-            body::before {
-              display: ${state.isDark
-                ? theme.display.none
-                : theme.display.block};
-            }
-            body::after {
-              display: ${state.isDark ? "block" : "none"};
-            }
             nav .hamburger .line {
               background: ${state.isDark
                 ? theme.light.background
@@ -91,8 +83,20 @@ export default function Layout({ children }) {
             nav h1.light-theme {
               display: ${state.isDark ? "none" : "block"};
             }
+            .sun {
+              display: ${state.isDark ? "none" : "block"};
+            }
+            .moon {
+              display: ${state.isDark ? "block" : "none"};
+            }
           `}
         />
+        <div className="moon">
+          <div></div>
+        </div>
+        <div className="sun">
+          <div></div>
+        </div>
         {children}
       </div>
       <footer>

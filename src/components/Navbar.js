@@ -31,7 +31,7 @@ export default function Navbar() {
         </button>
         <section className="dropdown-content">
           <Link to="/index.de" activeClassName="active">
-            Deutch
+            Deutsch
           </Link>
           <Link to="/index.ar" activeClassName="active">
             العربية

@@ -22,7 +22,7 @@ export default function Navbar() {
             English
           </Link>
           <Link to="/index.de" activeClassName="active">
-            Deutch
+            Deutsch
           </Link>
         </section>
       </div>

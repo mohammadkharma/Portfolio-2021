@@ -92,6 +92,8 @@ body::after {
   }
 }
 
+/* ----------------------------------- */
+/* arabic extra styles */
 #headerAr {
   text-align: right;
 }
@@ -99,6 +101,7 @@ body::after {
 #formAr label {
   text-align: right;
 }
+/* ----------------------------------- */
 
 /* layout  */
 .layout {

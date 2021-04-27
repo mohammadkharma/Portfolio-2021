@@ -45,19 +45,15 @@ export default function Navbar() {
         </Link>
 
         <div className="dropdown-about">
-          <button className="dropbtn">
-            <Link to="/about" activeClassName="active">
-              About
-            </Link>
-          </button>
+          <button className="dropbtn">About</button>
           <section className="dropdown-content">
-            <Link to="/about#aboutMe" activeClassName="active">
+            <Link to="/about" activeClassName="active">
               About Me
             </Link>
-            <Link to="/about#references" activeClassName="active">
+            <Link to="/references" activeClassName="active">
               References
             </Link>
-            <Link to="/about#skillsHobbies" activeClassName="active">
+            <Link to="/skillsHobbies" activeClassName="active">
               Skills & Hobbies
             </Link>
           </section>

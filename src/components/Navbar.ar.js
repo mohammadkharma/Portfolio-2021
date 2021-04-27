@@ -35,9 +35,9 @@ export default function Navbar() {
             </Link>
           </button>
           <section className="dropdown-content">
-            <Link to="/about.ar">عني</Link>
+            <Link to="/skillsHobbies.ar">المهارات والهوايات</Link>
             <Link to="/references.ar">مراجع</Link>
-            <Link to="/skillsHobies.ar">المهارات والهوايات</Link>
+            <Link to="/about.ar">عني</Link>
           </section>
         </div>
         <Link to="/index.ar" activeClassName="active">

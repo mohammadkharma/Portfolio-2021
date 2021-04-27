@@ -47,11 +47,9 @@ export default function Contact() {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
+          id="formAr"
         >
           <input type="hidden" name="form-name" value="contact" />
-          <label htmlFor="firstName" className={styles.labelName}>
-            الاسم الأول
-          </label>
           <input
             id="firstName"
             name="firstName"
@@ -61,8 +59,8 @@ export default function Contact() {
             placeholder="أدخل اسمك الأول"
             className={styles.inputName}
           />
-          <label htmlFor="lastName" className={styles.labelName}>
-            الكنية
+          <label htmlFor="firstName" className={styles.labelName}>
+            الاسم الأول
           </label>
           <input
             id="lastName"
@@ -73,6 +71,9 @@ export default function Contact() {
             placeholder="أدخل اسمك الأخير"
             className={styles.inputName}
           />
+          <label htmlFor="lastName" className={styles.labelName}>
+            الكنية
+          </label>
           <label htmlFor="email">البريد إلكتروني</label>
           <input
             id="email"

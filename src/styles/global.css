@@ -92,6 +92,14 @@ body::after {
   }
 }
 
+#headerAr {
+  text-align: right;
+}
+
+#formAr label {
+  text-align: right;
+}
+
 /* layout  */
 .layout {
   max-width: 90vw;

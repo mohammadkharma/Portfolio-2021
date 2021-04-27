@@ -8,30 +8,26 @@ export default function Navbar() {
   const [showLinks, setShowLinks] = useState(false)
   return (
     <nav>
-      <div className="title">
-        <h1 className="dark-theme"> محمد خرما </h1>
-        <h1 className="light-theme"> محمد خرما </h1>
-      </div>
-
-      <div className="dropdown-lang">
-        <button className="dropbtn">
-          <HiTranslate />
-        </button>
-        <section className="dropdown-content">
-          <Link to="/" activeClassName="active">
-            English
-          </Link>
-          <Link to="/index.de" activeClassName="active">
-            Deutsch
-          </Link>
-        </section>
-      </div>
-
       <div className="links" id={showLinks ? "hidden" : ""}>
-        <Link to="/index.ar" activeClassName="active">
-          الصفحة الرئيسية
-        </Link>
+        <div className="theme-toggle">
+          <p>:الوضع المظلم</p>
+          <input
+            onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
+            id="checkbox"
+            type="checkbox"
+            name=""
+            readOnly={true}
+            checked={state.isDark ? true : false}
+          />
+          <p>{state.isDark ? "نعم" : "لا"}</p>
+        </div>
 
+        <Link to="/contact.ar" activeClassName="active">
+          اتصال
+        </Link>
+        <Link to="/projects/index.ar" activeClassName="active">
+          المشاريع
+        </Link>
         <div className="dropdown-about">
           <button className="dropbtn">
             <Link to="/about.ar" activeClassName="active">
@@ -50,26 +46,28 @@ export default function Navbar() {
             </Link>
           </section>
         </div>
-
-        <Link to="/projects/index.ar" activeClassName="active">
-          المشاريع
+        <Link to="/index.ar" activeClassName="active">
+          الصفحة الرئيسية
         </Link>
-        <Link to="/contact.ar" activeClassName="active">
-          اتصال
-        </Link>
+      </div>
 
-        <div className="theme-toggle">
-          <p>:الوضع المظلم</p>
-          <input
-            onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
-            id="checkbox"
-            type="checkbox"
-            name=""
-            readOnly={true}
-            checked={state.isDark ? true : false}
-          />
-          <p>{state.isDark ? "نعم" : "لا"}</p>
-        </div>
+      <div className="dropdown-lang">
+        <button className="dropbtn">
+          <HiTranslate />
+        </button>
+        <section className="dropdown-content">
+          <Link to="/" activeClassName="active">
+            English
+          </Link>
+          <Link to="/index.de" activeClassName="active">
+            Deutsch
+          </Link>
+        </section>
+      </div>
+
+      <div className="title">
+        <h1 className="dark-theme"> محمد خرما </h1>
+        <h1 className="light-theme"> محمد خرما </h1>
       </div>
 
       <button

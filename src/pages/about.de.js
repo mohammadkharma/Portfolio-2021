@@ -16,24 +16,24 @@ export default function About() {
         <section className={styles.aboutMe} id="aboutMe">
           <h2>Lernen wir uns kennen!</h2>
           <div className={styles.aboutMeItem}>
-            <h3>General mich</h3>
+            <h3>Ich - Allgemeinh</h3>
             <div className={styles.aboutContent}>
               <div className={styles.arrows}></div>
               <p>
-                Als erster Karriereweg ging es in meinem Leben speziell um
-                Sport, Basketball. Als Spieler, Trainer und Lehrer habe ich
-                meine flexible, verantwortungsbewusste und reife Persönlichkeit
-                aufgebaut. In einem solchen Bereich können Sie mit verschiedenen
+                Im ersten Karriereweg ging es in meinem Leben speziell um Sport,
+                Basketball. Als Spieler, Trainer und Lehrer habe ich meine
+                verantwortungsbewusste, flexible und reife Persönlichkeit
+                aufgebaut. In einem solchen Bereich konnte ich mit verschiedenen
                 Menschen unterschiedlichen Alters arbeiten und Erfahrungen in
                 der Arbeit unter Zeitdruck und unter schwierigeren Umständen
                 sammeln. Danach und wegen einer Verletzung überquerte ich die
-                Brücke vom Sport zum Geschäftsfeld und arbeitete als
-                Verkaufsleiter / Managerassistent, bis das Schicksal wollte,
-                dass ich mein Heimatland verlasse und meine Karriere ändere. Und
-                hier bin ich heute und lebe einen neuen Traum als Webentwickler
-                in Berlin.
+                Brücke vom Sport in die Geschäftswelt und arbeitete als
+                Verkaufsleiter und Managementassistent, bis das Schicksal
+                wollte, dass ich mein Heimatland verlasse und meine Karriere
+                ändere. Und hier bin ich heute und lebe einen neuen Traum als
+                Webentwickler in Berlin.
                 <span>
-                  "Sie verpassen 100 Prozent der Aufnahmen, die Sie nie machen."
+                  „Du verfehlst 100 % der Torschüsse, die du nicht machst“
                   <br />
                   Wayne Gretzky
                 </span>
@@ -41,19 +41,19 @@ export default function About() {
             </div>
           </div>
           <div className={styles.aboutMeItem}>
-            <h3>Aktuelles mich</h3>
+            <h3>Das aktuelle Ich</h3>
             <div className={styles.aboutContent}>
               <div className={styles.arrows}></div>
               <p>
                 Ein schnell lernender Webentwickler, der sich für sauberen Code
                 und herausfordernde Problemlösungen begeistert. Immer auf dem
                 neuesten Stand mit neuen Technologien und auf der Suche nach
-                modernen und klaren Designs. Kombinieren Sie dies mit dem
-                Komfort, über das Front-End hinweg zu arbeiten, um
-                außergewöhnliche Produkte für Kunden zu liefern.
+                modernen und klaren Designs. Hauptsächlich arrbeitet im
+                Front-End-Bereich, um außergewöhnliche Produkte für Kunden zu
+                liefern.
                 <span>
-                  "Perfektion ist nicht erreichbar, aber wenn wir Perfektion
-                  verfolgen, können wir Spitzenleistungen erzielen."
+                  „Perfektion ist nicht erreichbar, aber wenn wir Perfektion
+                  verfolgen, können wir Spitzenleistungen erzielen“
                   <br />
                   Vince Lombardi
                 </span>
@@ -61,7 +61,7 @@ export default function About() {
             </div>
           </div>
           <div className={styles.aboutMeItem}>
-            <h3>Morgen mich</h3>
+            <h3>Das Zukunft- Ich</h3>
             <div className={styles.aboutContent}>
               <div className={styles.arrows}></div>
               <p>
@@ -72,8 +72,8 @@ export default function About() {
                 die meisten Menschen möchte ich eine Rolle erhalten, die in
                 Zukunft mehr Verantwortung trägt.
                 <span>
-                  "Der beste Weg, die Zukunft vorherzusagen, besteht darin, sie
-                  zu schaffen."
+                  „Der beste Weg, die Zukunft vorherzusagen, besteht darin, sie
+                  zu schaffen“
                   <br />
                   Abraham Lincoln
                 </span>

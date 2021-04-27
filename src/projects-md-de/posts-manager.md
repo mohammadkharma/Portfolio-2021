@@ -11,4 +11,4 @@ featuredImg: ../images/featured/p2-banner.png
 
 ### REACT
 
-Eine einfache Posting-App mit Authentifizierung zum Anmelden und Anmelden. Das Projekt basiert auf React and Googles Firebase for Data. Die Stile sind initial, da der Schwerpunkt auf der Authentifizierung lag.
+Eine einfache Posting-App mit Authentifizierung zum Anmelden und Abmelden. Das Projekt basiert auf React and Googles Firebase for Data. Die Stile sind anfänglich, da der Schwerpunkt auf der Authentifizierung lag

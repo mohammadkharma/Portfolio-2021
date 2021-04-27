@@ -46,9 +46,9 @@ export default function About() {
               <p>
                 A fast-learning web developer who is passionate about clean code
                 and challenging problem-solving. Always up to date with new
-                technologies and looking for modern and clear designs. Combine
-                this with the comfort of working across the front-end to deliver
-                exceptional customer-facing products.
+                technologies and looking for modern and clear designs. Mainly
+                working across the front-end to deliver exceptional
+                customer-facing products.
                 <span>
                   “Perfection is not attainable, but if we chase perfection we
                   can catch excellence.”

@@ -12,7 +12,8 @@ export default function Home({ data }) {
 
   return (
     <Layout>
-      <section className={styles.header}>
+      <section className={styles.header} id="headerAr">
+        <Img className={styles.img} fluid={image} />
         <div className={styles.intro}>
           <h2>تطوير</h2>
           <h3>تصميم ونشر</h3>
@@ -21,7 +22,6 @@ export default function Home({ data }) {
             مشاريعي
           </Link>
         </div>
-        <Img className={styles.img} fluid={image} />
       </section>
     </Layout>
   )

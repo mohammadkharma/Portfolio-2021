@@ -9,4 +9,4 @@ thumb: ../images/thumbs/clinic.jpg
 featuredImg: ../images/featured/p5-banner.png
 ---
 
-Dieses Projekt war eine Vorlagenwebsite für einen Arztfreund, der ein Labor und eine Klinik hat. Ziel war es, an einem vollständigen Projekt zu arbeiten, das von Stilen über die Datenverarbeitung bis hin zur Bereitstellung reicht.
+Dieses Projekt war eine Vorlagenwebsite für einen Arztfreund, der ein Labor und eine Klinik besitzt. Ziel war es, an einem vollständigen Projekt zu arbeiten, das vom Stil über die Datenverarbeitung bis hin zur Bereitstellung bearbeitet wurde

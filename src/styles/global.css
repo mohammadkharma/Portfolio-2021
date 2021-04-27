@@ -498,7 +498,7 @@ footer p {
   }
 
   nav .dropdown-lang {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   nav .links a {
@@ -537,7 +537,7 @@ footer p {
 }
 
 /* responsive */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .layout {
     width: 80vw;
   }
@@ -548,7 +548,7 @@ footer p {
   }
 
   nav .title {
-    width: 80%;
+    width: 70%;
   }
 
   nav .dropdown-lang {

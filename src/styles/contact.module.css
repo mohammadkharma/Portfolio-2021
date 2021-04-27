@@ -1,5 +1,4 @@
 .iconsContainer {
-  margin: 30px auto;
   width: 350px;
   border-radius: 15px;
   display: flex;
@@ -132,6 +131,7 @@
   margin: 5vh auto;
   backdrop-filter: blur(7px);
   min-height: 50vh;
+  padding-bottom: 50px;
 }
 
 .contact form {

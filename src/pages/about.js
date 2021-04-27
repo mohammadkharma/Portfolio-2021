@@ -14,7 +14,7 @@ export default function About() {
     <Layout>
       <div className={styles.about}>
         <h1>Let us get to know each other!</h1>
-        <div className={styles.aboutMe} id="aboutMe">
+        <div className={styles.aboutMe}>
           <section className={styles.aboutMeItem}>
             <h2>General Me</h2>
             <p>

@@ -51,15 +51,9 @@ export default function Navbar() {
             </Link>
           </button>
           <section className="dropdown-content">
-            <Link to="/about.de#aboutMe" activeClassName="active">
-              Über mich
-            </Link>
-            <Link to="/about.de#references" activeClassName="active">
-              Referenzen
-            </Link>
-            <Link to="/about.de#skillsHobbies" activeClassName="active">
-              Fähigkeiten & Hobbys
-            </Link>
+            <Link to="/about.de">Über mich</Link>
+            <Link to="/references.de.js">Referenzen</Link>
+            <Link to="/skillsHobbies.de.js">Fähigkeiten & Hobbys</Link>
           </section>
         </div>
 

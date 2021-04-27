@@ -35,15 +35,9 @@ export default function Navbar() {
             </Link>
           </button>
           <section className="dropdown-content">
-            <Link to="/about.ar#aboutMe" activeClassName="active">
-              عني
-            </Link>
-            <Link to="/about.ar#references" activeClassName="active">
-              مراجع
-            </Link>
-            <Link to="/about.ar#skillsHobbies" activeClassName="active">
-              المهارات والهوايات
-            </Link>
+            <Link to="/about.ar">عني</Link>
+            <Link to="/references.ar">مراجع</Link>
+            <Link to="/skillsHobies.ar">المهارات والهوايات</Link>
           </section>
         </div>
         <Link to="/index.ar" activeClassName="active">

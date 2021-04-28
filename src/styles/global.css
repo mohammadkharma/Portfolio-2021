@@ -39,7 +39,7 @@ body::before {
   /* filter: blur(2px); */
   /* animation: before 5s linear infinite; */
   animation: birdFly 1s steps(10) infinite,
-    birdMovement 30s ease-in-out infinite;
+    birdMovement 20s ease-in-out infinite;
   /* animation-duration: 1s;
   animation-delay: 0.5s;
   animation-timing-function: steps(10);
@@ -69,12 +69,12 @@ body::before {
 
 .sun {
   position: fixed;
-  opacity: 0.7;
+  opacity: 0.5;
   display: none;
-  top: 45vh;
+  top: 40vh;
   right: -10vw;
-  width: 10vw;
-  height: 10vw;
+  width: 150px;
+  height: 150px;
   z-index: -2;
   background: #ffa200;
   border-radius: 50%;
@@ -86,20 +86,17 @@ body::before {
 
 @keyframes sunMovement {
   25% {
-    top: 30vh;
-    width: 5vw;
-    height: 5vw;
+    width: 200px;
+    height: 200px;
   }
   50% {
-    top: 45vh;
     right: 100vw;
-    width: 10vw;
-    height: 10vw;
+    width: 150px;
+    height: 150px;
   }
   75% {
-    width: 5vw;
-    height: 5vw;
-    top: 65vh;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -161,8 +158,8 @@ body::after {
 
 .moon {
   position: fixed;
-  width: 10vw;
-  height: 10vw;
+  width: 150px;
+  height: 150px;
   top: 45vh;
   display: none;
   left: 0;
@@ -202,18 +199,18 @@ body::after {
 @keyframes moonMovement {
   25% {
     top: 10vh;
-    width: 15vw;
-    height: 15vw;
+    width: 200px;
+    height: 200px;
   }
   50% {
     top: 45vh;
     left: 90vw;
-    width: 10vw;
-    height: 10vw;
+    width: 150px;
+    height: 150px;
   }
   75% {
-    width: 5vw;
-    height: 5vw;
+    width: 100px;
+    height: 100px;
     top: 75vh;
   }
 }
@@ -712,13 +709,6 @@ footer > p {
 
 /* responsive */
 @media only screen and (max-width: 850px) {
-  .sun,
-  .moon {
-    width: 20vw;
-    height: 20vw;
-    left: -10vw;
-  }
-
   .layout {
     width: 80vw;
   }

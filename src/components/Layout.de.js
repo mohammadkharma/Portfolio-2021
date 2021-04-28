@@ -4,6 +4,9 @@ import "../styles/global.css"
 import { Global, css } from "@emotion/core"
 import { useTheme } from "@emotion/react"
 import Context from "../store/context"
+import { FaXing } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { FaLinkedin } from "react-icons/fa"
 
 export default function Layout({ children }) {
   const { state } = useContext(Context)
@@ -60,10 +63,10 @@ export default function Layout({ children }) {
                 : "none"};
               text-decoration: underline;
             }
-            div.contact-module--iconsContainer--1HzwP {
+            .iconsContainer {
               display: ${state.isDark ? "none" : "block"};
             }
-            div.contact-module--iconsContainerDark--2V-Ly {
+            .iconsContainerDark {
               display: ${state.isDark ? "block" : "none"};
             }
             section::before {
@@ -83,10 +86,12 @@ export default function Layout({ children }) {
             nav h1.light-theme {
               display: ${state.isDark ? "none" : "block"};
             }
-            .sun {
+            .sun,
+            body::before {
               display: ${state.isDark ? "none" : "block"};
             }
-            .moon {
+            .moon,
+            body::after {
               display: ${state.isDark ? "block" : "none"};
             }
           `}
@@ -100,6 +105,43 @@ export default function Layout({ children }) {
         {children}
       </div>
       <footer>
+        <div className="iconsContainer">
+          <button>
+            <a href="https://github.com/mohammadkharma">
+              <FaGithub className="img" />
+              {/* <img src={GH} alt="Github" /> */}
+            </a>
+          </button>
+          <button>
+            <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
+              <FaLinkedin className="img" />
+              {/* <img src={LI} alt="LinkedIn" /> */}
+            </a>
+          </button>
+          <button>
+            <a href="https://www.xing.com/profile/Mohammad_Kharma2">
+              <FaXing className="img" />
+              {/* <img src={XG} alt="Xing" /> */}
+            </a>
+          </button>
+        </div>
+        <div className="iconsContainerDark">
+          <button>
+            <a href="https://github.com/mohammadkharma">
+              <FaGithub className="img" />
+            </a>
+          </button>
+          <button>
+            <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
+              <FaLinkedin className="img" />
+            </a>
+          </button>
+          <button>
+            <a href="https://www.xing.com/profile/Mohammad_Kharma2">
+              <FaXing className="img" />
+            </a>
+          </button>
+        </div>
         <p>Copyright 2021 Mohammad Kharma</p>
         <p>Angetrieben von Gatsby</p>
       </footer>

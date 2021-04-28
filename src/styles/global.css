@@ -17,45 +17,110 @@ body {
   font-family: "Bitter", serif;
 }
 
-/* body::before for light mode theme only */
+/* ------------------------ Theme --------------------------- */
+
+/* light mode */
 body::before {
   content: "";
   display: none;
   position: fixed;
-  bottom: 15vh;
-  right: 2vw;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  top: 30vh;
+  left: 0vw;
+  width: 200px;
+  height: 300px;
+  will-change: background-position;
+  /* border-radius: 50%; */
   /* background: linear-gradient(to right, #a4a4a4, #4f4f4f, #a4a4a4); */
-  /* background-image: url(../../static/wall1.jpg); */
-  /* background-size: 100%; */
+  background-image: url(../../static/birds.svg);
+  background-size: auto 100%;
   /* background-position: center; */
-  background: #63cdff;
+  /* background: #63cdff; */
   z-index: -1;
-  filter: blur(2px);
-  animation: before 40s ease-in-out infinite;
+  /* filter: blur(2px); */
+  /* animation: before 5s linear infinite; */
+  animation: birdFly 1s steps(10) infinite,
+    birdMovement 30s ease-in-out infinite;
+  /* animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite; */
+  /* transform: scaleX(-1); */
+  opacity: 0.5;
 }
 
-@keyframes before {
-  0% {
-    transform: translateY(0px);
+@keyframes birdFly {
+  100% {
+    background-position: -2150px 0;
   }
-  25% {
-    transform: translateX(-80vw);
+}
+
+@keyframes birdMovement {
+  40% {
+    transform: scaleX(1);
   }
   50% {
-    transform: translateX(0px);
+    left: 90vw;
+    transform: scaleX(-1);
   }
-  75% {
-    transform: translateY(-50vh);
-  }
-  100% {
-    transform: translateY(0px);
+  99% {
+    transform: scaleX(-1);
   }
 }
 
-/* body::after for dark mode theme only */
+.sun {
+  position: fixed;
+  opacity: 0.7;
+  display: none;
+  top: 45vh;
+  right: -10vw;
+  width: 10vw;
+  height: 10vw;
+  z-index: -2;
+  background: #ffa200;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1vw #ffa20080, 0 0 0 2vw #ffa20040, 0 0 0 3vw #ffa20020,
+    0 0 0 4vw #ffa20010, 0 0 2vw 5vw #ffa20010;
+  animation: sunrise 3s infinite linear forwards,
+    sunRays 3s infinite linear forwards, sunMovement 60s ease-in-out infinite;
+}
+
+@keyframes sunMovement {
+  25% {
+    top: 30vh;
+    width: 5vw;
+    height: 5vw;
+  }
+  50% {
+    top: 45vh;
+    right: 100vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  75% {
+    width: 5vw;
+    height: 5vw;
+    top: 65vh;
+  }
+}
+
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+}
+
+@keyframes sunRays {
+  0% {
+    box-shadow: 0 0 0 0 #ffa20080, 0 0 0 1vw #ffa20080, 0 0 0 2vw #ffa20040,
+      0 0 0 3vw #ffa20020, 0 0 0 4vw #ffa20010, 0 0 2vw 5vw #ffa20010;
+  }
+  100% {
+    box-shadow: 0 0 0 0 #ffa20080, 0 0 0 1vw #ffa20040, 0 0 0 2vw #ffa20020,
+      0 0 0 3vw #ffa20010, 0 0 0 4vw #ffa20000, 0 0 2vw 5vw #ffa20010;
+  }
+}
+
+/* dark mode */
 body::after {
   display: none;
   content: "";
@@ -70,50 +135,43 @@ body::after {
   background-position: cover;
   z-index: -2;
   /* filter: blur(2px); */
-  animation: after 5s ease-in-out infinite;
+  animation: stars 5s linear infinite;
 }
 
-@keyframes after {
+@keyframes stars {
   25% {
     transform: translateX(2px);
+    opacity: 0.7;
+  }
+  37% {
+    opacity: 1;
   }
   50% {
     transform: translateY(0px);
-    opacity: 0.5;
+    opacity: 0.7;
+  }
+  67% {
+    opacity: 1;
   }
   75% {
     transform: translateX(2px);
+    opacity: 0.7;
   }
 }
 
-/* ----------------------------------- */
-/* arabic extra styles */
-#headerAr,
-#formAr label,
-#skillsHobbies {
-  text-align: right;
-}
-/* ----------------------------------- */
-
-/* layout  */
-.layout {
-  max-width: 90vw;
-  margin: 0 auto;
-}
-
-/* moon - son */
 .moon {
   position: fixed;
-  width: 100px;
-  height: 100px;
-  top: 0;
-  left: 2vw;
+  width: 10vw;
+  height: 10vw;
+  top: 45vh;
+  display: none;
+  left: 0;
   z-index: -1;
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0 0 20px 20px #000 inset, 0 0 20px rgb(114, 114, 114);
-  animation: moon 40s ease-in-out infinite;
+  animation: moonMovement 30s ease-in-out infinite;
 }
 
 .moon::after {
@@ -132,55 +190,47 @@ body::after {
   width: 200%;
   height: 100%;
   background: url(../../static/moon.jpg);
-  animation: spin 10s linear alternate infinite;
+  animation: moonSpin 10s linear alternate infinite;
 }
 
-@keyframes spin {
+@keyframes moonSpin {
   to {
     transform: translateX(-50%);
   }
 }
 
-@keyframes moon {
+@keyframes moonMovement {
+  25% {
+    top: 10vh;
+    width: 15vw;
+    height: 15vw;
+  }
   50% {
-    top: 50vh;
-    left: 75vw;
-    width: 300px;
-    height: 300px;
+    top: 45vh;
+    left: 90vw;
+    width: 10vw;
+    height: 10vw;
+  }
+  75% {
+    width: 5vw;
+    height: 5vw;
+    top: 75vh;
   }
 }
 
-.sun {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100px;
-  z-index: -1;
-  width: 100px;
-  background: #ffde00;
-  border-radius: 50%;
-  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
-    0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
-  animation: moon 40s ease-in-out infinite;
-  animation: sunrise 2s infinite linear forwards, rays 2s 2s infinite linear,
-    moon 40s ease-in-out infinite;
+/* ----------------------------------- */
+/* arabic extra styles */
+#headerAr,
+#formAr label,
+#skillsHobbies {
+  text-align: right;
 }
+/* ----------------------------------- */
 
-@keyframes sunrise {
-  0% {
-    box-shadow: none;
-  }
-}
-
-@keyframes rays {
-  0% {
-    box-shadow: 0 0 0 0px #ffde0080, 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040,
-      0 0 0 60px #ffde0020, 0 0 0 80px #ffde0010, 0 0 40px 100px #ffde0010;
-  }
-  100% {
-    box-shadow: 0 0 0 0px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 40px #ffde0020,
-      0 0 0 60px #ffde0010, 0 0 0 80px #ffde0000, 0 0 40px 100px #ffde0010;
-  }
+/* layout  */
+.layout {
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 /* nav */
@@ -482,11 +532,135 @@ footer {
   bottom: 0;
   text-align: center;
   z-index: 10;
-  margin: 20px auto;
+  margin: 10vh auto;
   z-index: 1;
 }
 
-footer p {
+.iconsContainer {
+  margin: 30px auto;
+  width: 350px;
+  border-radius: 15px;
+  display: flex;
+  background-color: rgb(214, 214, 214);
+}
+
+.iconsContainer button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(214, 214, 214);
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.iconsContainer button .img {
+  border-radius: 15px;
+  font-size: 40px !important;
+}
+
+.iconsContainer button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.iconsContainer button:hover .img {
+  font-size: 42px !important;
+}
+
+.iconsContainer button:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(214, 214, 214);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconsContainer button:hover::before {
+  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iconsContainer button:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
+}
+
+.iconsContainer button .img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+/* ------------------------------------------------- */
+
+.iconsContainerDark {
+  margin: 30px auto;
+  width: 350px;
+  display: flex;
+  border-radius: 15px;
+  background-color: rgb(114, 114, 114);
+}
+
+.iconsContainerDark button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(114, 114, 114);
+  box-shadow: 5px 5px 10px #212121, -5px -5px 10px #9d9d9d;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.iconsContainerDark button .img {
+  border-radius: 15px;
+  font-size: 40px !important;
+}
+
+.iconsContainerDark button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.iconsContainerDark button:hover .img {
+  font-size: 42px !important;
+}
+
+.iconsContainerDark button:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(114, 114, 114);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconsContainerDark button:hover::before {
+  box-shadow: inset -7px -7px 20px 0 #9d9d9d,
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iconsContainerDark button:active {
+  box-shadow: inset 1px 1px 2px #9d9d9d, inset -1px -1px 2px #212121;
+}
+
+.iconsContainerDark button .img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+/* ------------------------------------------------- */
+
+footer > p {
   color: rgb(135, 135, 135);
 }
 
@@ -538,6 +712,13 @@ footer p {
 
 /* responsive */
 @media only screen and (max-width: 850px) {
+  .sun,
+  .moon {
+    width: 20vw;
+    height: 20vw;
+    left: -10vw;
+  }
+
   .layout {
     width: 80vw;
   }
@@ -594,5 +775,10 @@ footer p {
   }
   nav .hamburger .line {
     height: 3px;
+  }
+  .iconsContainer,
+  .iconsContainerDark {
+    width: 150px;
+    margin: auto;
   }
 }

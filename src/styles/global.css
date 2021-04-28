@@ -60,35 +60,29 @@ body::after {
   display: none;
   content: "";
   position: fixed;
-  top: 15vh;
-  left: 2vw;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: #63cdff;
-  /* background-image: url(../../static/wall.jpg); */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../static/stars.jpg);
   /* background-position: center; */
-  /* background-size: 100%; */
-  z-index: -1;
-  filter: blur(2px);
-  animation: after 40s ease-in-out infinite;
+  background-size: 110%;
+  background-position: cover;
+  z-index: -2;
+  /* filter: blur(2px); */
+  animation: after 5s ease-in-out infinite;
 }
 
 @keyframes after {
-  0% {
-    transform: translateY(0px);
-  }
   25% {
-    transform: translateX(80vw);
+    transform: translateX(2px);
   }
   50% {
-    transform: translateX(0px);
+    transform: translateY(0px);
+    opacity: 0.5;
   }
   75% {
-    transform: translateY(50vh);
-  }
-  100% {
-    transform: translateY(0px);
+    transform: translateX(2px);
   }
 }
 
@@ -113,8 +107,8 @@ body::after {
   width: 100px;
   height: 100px;
   top: 0;
-  z-index: -1;
   left: 2vw;
+  z-index: -1;
   margin: auto;
   overflow: hidden;
   border-radius: 50%;
@@ -148,25 +142,11 @@ body::after {
 }
 
 @keyframes moon {
-  25% {
-    top: 60vh;
-    left: 2vw;
-    width: 200px;
-    height: 200px;
-  }
-
   50% {
     top: 50vh;
     left: 75vw;
     width: 300px;
     height: 300px;
-  }
-
-  75% {
-    top: 20vh;
-    left: 85vw;
-    width: 200px;
-    height: 200px;
   }
 }
 

@@ -15,12 +15,6 @@ body {
 
 body {
   font-family: "Bitter", serif;
-  background: linear-gradient(
-    rgb(148, 231, 245),
-    rgba(252, 255, 95, 0.228),
-    white,
-    white
-  ) !important;
   background-size: 100vw 100vh !important;
   background-repeat: no-repeat !important;
 }

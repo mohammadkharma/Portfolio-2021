@@ -42,7 +42,7 @@ module.exports = {
     },
   ],
   siteMetadata: {
-    title: "Web Developmer Portfolio",
+    title: "Web Developmer - Portfolio",
     description: "a portfolio for a web developer",
     author: "Mohammad Kharma",
     copyright: "This website is copyright 2021",

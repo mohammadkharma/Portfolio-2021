@@ -8,21 +8,21 @@ export default function Navbar() {
     query SiteInfoDe {
       site {
         siteMetadata {
-          title
+          author
         }
       }
     }
   `)
 
-  const { title } = data.site.siteMetadata
+  const { author } = data.site.siteMetadata
 
   const { state, dispatch } = useContext(Context)
   const [showLinks, setShowLinks] = useState(false)
   return (
     <nav>
       <div className="title">
-        <h1 className="dark-theme"> {title} </h1>
-        <h1 className="light-theme"> {title} </h1>
+        <h1 className="dark-theme"> {author} </h1>
+        <h1 className="light-theme"> {author} </h1>
       </div>
 
       <div className="dropdown-lang">

@@ -5,8 +5,8 @@ stack: JAVASCRIPT HTML & CSS
 slug: ToDo-App
 link: https://mohammadkharma.github.io/DOM/projects/to_do_app/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/to_do_app
-thumb: ../images/thumbs/todo.jpg
-featuredImg: ../images/featured/p5-banner.png
+thumb: ../images/thumbs/todo-min.jpg
+featuredImg: ../images/featured/p5-banner-min.png
 ---
 
 ### JQUERY

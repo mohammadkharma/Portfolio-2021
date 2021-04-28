@@ -29,7 +29,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query Banner {
-    file(relativePath: { eq: "bewerbung.jpg" }) {
+    file(relativePath: { eq: "bewerbung-min.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

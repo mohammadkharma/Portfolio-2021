@@ -1,13 +1,13 @@
 import React from "react"
 import Layout from "../components/Layout.ar"
 import * as styles from "../styles/about.module.css"
-import resume from "../pdf/Lebenslauf_2021.pdf"
-import coverletter from "../pdf/coverletter.pdf"
-import sky from "../pdf/SkyAcademy.pdf"
-import petra from "../pdf/Lebanese-Petra.pdf"
-import icc from "../pdf/Integrated-Imunology-Clinic.pdf"
-import certificate from "../pdf/Kharma_Mohammad_Zertifikat.pdf"
-import b1 from "../pdf/B1.pdf"
+import resume from "../pdf/Lebenslauf_2021-min.pdf"
+import coverletter from "../pdf/coverletter-min.pdf"
+import sky from "../pdf/SkyAcademy-min.pdf"
+import petra from "../pdf/Lebanese-Petra-min.pdf"
+import icc from "../pdf/Integrated-Imunology-Clinic-min.pdf"
+import certificate from "../pdf/Kharma_Mohammad_Zertifikat-min.pdf"
+import b1 from "../pdf/B1-min.pdf"
 
 export default function References() {
   return (

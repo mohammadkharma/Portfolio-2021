@@ -24,7 +24,7 @@ export default function Layout({ children }) {
             body {
               background: ${state.isDark
                 ? theme.dark.background
-                : theme.light.background};
+                : "linear-gradient(rgb(110, 218, 237),  rgba(251, 255, 0, 0.228), white, white)"};
             }
             nav .hamburger .line {
               background: ${state.isDark

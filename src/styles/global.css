@@ -15,6 +15,14 @@ body {
 
 body {
   font-family: "Bitter", serif;
+  background: linear-gradient(
+    rgb(148, 231, 245),
+    rgba(252, 255, 95, 0.228),
+    white,
+    white
+  ) !important;
+  background-size: 100vw 100vh !important;
+  background-repeat: no-repeat !important;
 }
 
 /* ------------------------ Theme --------------------------- */
@@ -112,6 +120,19 @@ body::before {
     box-shadow: 0 0 0 0px #ff880080, 0 0 0 20px #ff880040, 0 0 0 40px #ff880020,
       0 0 0 60px #ff880010, 0 0 0 80px #ff880000, 0 0 40px 100px #ff880010;
   }
+}
+
+.sun::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -7%;
+  width: 200px;
+  height: 200px;
+  background-image: url(../../static/mask.png);
+  background-size: 175px 100px;
+  background-repeat: no-repeat;
+  z-index: 100;
 }
 
 /* dark mode */

@@ -96,7 +96,7 @@ export default function Layout({ children }) {
               display: ${state.isDark ? "none" : "block"};
             }
 
-            body::before {
+            .sun, body::before {
               display: ${state.isDark ? "none" : "block"};
             }
             .moon, body::after {

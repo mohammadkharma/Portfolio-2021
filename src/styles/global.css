@@ -71,8 +71,8 @@ body::before {
   position: fixed;
   opacity: 0.5;
   display: none;
-  top: 40vh;
-  right: -10vw;
+  top: 35vh;
+  right: 0;
   width: 150px;
   height: 150px;
   z-index: -2;
@@ -81,7 +81,7 @@ body::before {
   box-shadow: 0 0 0 1vw #ffa20080, 0 0 0 2vw #ffa20040, 0 0 0 3vw #ffa20020,
     0 0 0 4vw #ffa20010, 0 0 2vw 5vw #ffa20010;
   animation: sunrise 3s infinite linear forwards,
-    sunRays 3s infinite linear forwards, sunMovement 60s ease-in-out infinite;
+    sunRays 3s infinite linear forwards, sunMovement 90s ease-in-out infinite;
 }
 
 @keyframes sunMovement {
@@ -236,6 +236,7 @@ nav {
   justify-content: space-between;
   align-items: top;
   margin: 40px auto;
+  border-bottom: 1px solid #63cdff;
 }
 
 /* nav title */

@@ -1,10 +1,11 @@
 .projectsHomepage {
   text-align: center;
   margin: 5vh auto;
+  width: 70%;
 }
 
 .projectsHomepage > h3 {
-  background: #63cdff;
+  background: rgb(214, 214, 214);
   color: black;
   padding: 20px;
   margin: 40px auto;
@@ -21,7 +22,7 @@
 
 .projectsList {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 20px;
 }
 
@@ -108,15 +109,11 @@
 /* responsive */
 @media only screen and (max-width: 1200px) {
   .projectsList {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .projectsList {
-    grid-template-columns: 1fr;
-  }
-
   .projectsHomepage > h3 {
     width: 90%;
   }

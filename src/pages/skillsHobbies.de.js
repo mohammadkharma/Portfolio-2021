@@ -5,15 +5,38 @@ import * as styles from "../styles/about.module.css"
 export default function SkillsHobbies() {
   return (
     <Layout>
-      <section className={styles.skillsHobbies}>
+      <div className={styles.skillsHobbies}>
         <h2>Fähigkeiten & Hobbys</h2>
-        <p>
-          In der neuen Tech-Welt ist es gut, über digitale Fähigkeiten zu
-          verfügen. Ich habe meine in MS Office, Photoshop und Video Edit
-          verbessert. Bei den Hobbys steht Basketball an erster Stelle, gefolgt
-          von Tischtennis, Lesen und Spielen digitaler Spiele.
-        </p>
-      </section>
+        <div className={styles.skillsHobbiesContent}>
+          <section className={styles.skills}>
+            <p>
+              In der neuen Tech-Welt ist es gut, über digitale Fähigkeiten zu
+              verfügen. Ich habe meine in <b>MS Office</b>, <b>Photoshop</b>,
+              <b>Video Edit</b> und
+              <b>die folgenden Programmiersprachen und Technologien</b>:
+            </p>
+            <ul>
+              <li>Javascript</li>
+              <li>CSS</li>
+              <li>HTML</li>
+              <li>React</li>
+              <li>Gastyb</li>
+            </ul>
+          </section>
+          <section className={styles.hobbies}>
+            <p>
+              Bei den Hobbys steht <b>Basketball</b> an erster Stelle, gefolgt
+              von
+            </p>
+            <ul>
+              <li>Lesen</li>
+              <li>andere Sprachen lernen</li>
+              <li>Tischtennis</li>
+              <li>pielen digitaler Spiele</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </Layout>
   )
 }

@@ -24,7 +24,13 @@ export default function Layout({ children }) {
             body {
               background: ${state.isDark
                 ? theme.dark.background
-                : "linear-gradient(rgb(110, 218, 237),  rgba(251, 255, 0, 0.228), white, white)"};
+                : theme.light.background};
+            }
+            nav h1.dark-theme {
+              display: ${state.isDark ? "block" : "none"};
+            }
+            nav h1.light-theme {
+              display: ${state.isDark ? "none" : "block"};
             }
             nav .hamburger .line {
               background: ${state.isDark
@@ -32,17 +38,12 @@ export default function Layout({ children }) {
                 : theme.dark.background};
             }
             nav .links .theme-toggle p {
-              color: ${state.isDark ? "#63cdff" : theme.light.font};
-            }
-            nav .links a:hover {
-              text-decoration: underline;
-              margin-bottom: 10px;
+              color: ${state.isDark ? theme.dark.blue : theme.light.font};
             }
             nav .links a.active {
-              text-shadow: ${state.isDark ? "0 0 10px #63cdff" : "none"},
-                ${state.isDark ? "0 0 10px #63cdff" : "none"};
+              text-shadow: ${state.isDark ? theme.dark.textShadow : "none"};
               -webkit-box-reflect: ${state.isDark
-                ? "below -140% linear-gradient(#0003, #000)"
+                ? theme.dark.textReflect
                 : "none"};
               text-decoration: underline;
             }
@@ -52,39 +53,24 @@ export default function Layout({ children }) {
                 : theme.light.background};
             }
             nav #hidden a.active {
-              border-bottom: none;
-              text-shadow: ${state.isDark ? "0 0 10px #63cdff" : "none"},
-                ${state.isDark ? "0 0 20px #63cdff" : "none"},
-                ${state.isDark ? "0 0 40px #63cdff" : "none"},
-                ${state.isDark ? "0 0 80px #63cdff" : "none"},
-                ${state.isDark ? "0 0 160px #63cdff" : "none"};
+              text-shadow: ${state.isDark
+                ? theme.dark.textShadowHidden
+                : "none"};
               -webkit-box-reflect: ${state.isDark
-                ? "below 0 linear-gradient(#0002, #0008)"
+                ? theme.dark.textReflectHidden
                 : "none"};
               text-decoration: underline;
-            }
-            .iconsContainer {
-              display: ${state.isDark ? "none" : "block"};
-            }
-            .iconsContainerDark {
-              display: ${state.isDark ? "block" : "none"};
             }
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }
             .projects-module--project--1zdcJ:hover {
               box-shadow: ${state.isDark
-                ? "0px 0px 20px #63cdff, 0px 0px 20px #63cdff, 0px 0px 20px #63cdff"
-                : "0px 10px 50px rgba(0, 0, 0, 1)"};
+                ? theme.dark.cardBoxShadow
+                : theme.light.cardBoxShadow};
               background: ${state.isDark
                 ? "#63ceffe0"
                 : "rgba(255, 255, 255, 0.9);"};
-            }
-            nav h1.dark-theme {
-              display: ${state.isDark ? "block" : "none"};
-            }
-            nav h1.light-theme {
-              display: ${state.isDark ? "none" : "block"};
             }
             .sun,
             body::before {
@@ -92,6 +78,12 @@ export default function Layout({ children }) {
             }
             .moon,
             body::after {
+              display: ${state.isDark ? "block" : "none"};
+            }
+            .iconsContainer {
+              display: ${state.isDark ? "none" : "block"};
+            }
+            .iconsContainerDark {
               display: ${state.isDark ? "block" : "none"};
             }
           `}

@@ -22,74 +22,9 @@ export default function Layout({ children }) {
               color: ${state.isDark ? theme.dark.font : theme.light.font};
             }
             body {
-              background: ${
-                state.isDark
-                  ? theme.dark.background
-                  : "linear-gradient(rgb(110, 218, 237),  rgba(251, 255, 0, 0.228), white, white)"
-              };
-            }
-
-            body::before {
-              display
-            }
-
-            nav .hamburger .line {
-              background: ${
-                state.isDark ? theme.light.background : theme.dark.background
-              };
-            }
-            nav .links .theme-toggle p {
-              color: ${state.isDark ? "#63cdff" : theme.light.font};
-            }
-            nav .links a:hover {
-              text-decoration: underline;
-              margin-bottom: 10px;
-            }
-            nav .links a.active {
-              text-shadow: ${state.isDark ? "0 0 10px #63cdff" : "none"},
-                ${state.isDark ? "0 0 10px #63cdff" : "none"};
-              -webkit-box-reflect: ${
-                state.isDark
-                  ? "below -140% linear-gradient(#0003, #000)"
-                  : "none"
-              };
-              text-decoration: underline;
-            }
-            nav #hidden {
-              background: ${
-                state.isDark ? theme.dark.background : theme.light.background
-              };
-            }
-            nav #hidden a.active {
-              border-bottom: none;
-              text-shadow: ${state.isDark ? "0 0 10px #63cdff" : "none"},
-                ${state.isDark ? "0 0 20px #63cdff" : "none"},
-                ${state.isDark ? "0 0 40px #63cdff" : "none"},
-                ${state.isDark ? "0 0 80px #63cdff" : "none"},
-                ${state.isDark ? "0 0 160px #63cdff" : "none"};
-              -webkit-box-reflect: ${
-                state.isDark ? "below 0 linear-gradient(#0002, #0008)" : "none"
-              };
-              text-decoration: underline;
-            }
-            .iconsContainer {
-              display: ${state.isDark ? "none" : "block"};
-            }
-            .iconsContainerDark {
-              display: ${state.isDark ? "block" : "none"};
-            }
-            section::before {
-              display: ${state.isDark ? "block" : "none"};
-            }
-            .projects-module--project--1zdcJ:hover {
-              box-shadow: ${
-                state.isDark
-                  ? "0px 0px 20px #63cdff, 0px 0px 20px #63cdff, 0px 0px 20px #63cdff"
-                  : "0px 10px 50px rgba(0, 0, 0, 1)"
-              };
-              background: ${
-                state.isDark ? "#63ceffe0" : "rgba(255, 255, 255, 0.9);"
-              };
+              background: ${state.isDark
+                ? theme.dark.background
+                : theme.light.background};
             }
             nav h1.dark-theme {
               display: ${state.isDark ? "block" : "none"};
@@ -97,11 +32,58 @@ export default function Layout({ children }) {
             nav h1.light-theme {
               display: ${state.isDark ? "none" : "block"};
             }
-
-            .sun, body::before {
+            nav .hamburger .line {
+              background: ${state.isDark
+                ? theme.light.background
+                : theme.dark.background};
+            }
+            nav .links .theme-toggle p {
+              color: ${state.isDark ? theme.dark.blue : theme.light.font};
+            }
+            nav .links a.active {
+              text-shadow: ${state.isDark ? theme.dark.textShadow : "none"};
+              -webkit-box-reflect: ${state.isDark
+                ? theme.dark.textReflect
+                : "none"};
+              text-decoration: underline;
+            }
+            nav #hidden {
+              background: ${state.isDark
+                ? theme.dark.background
+                : theme.light.background};
+            }
+            nav #hidden a.active {
+              text-shadow: ${state.isDark
+                ? theme.dark.textShadowHidden
+                : "none"};
+              -webkit-box-reflect: ${state.isDark
+                ? theme.dark.textReflectHidden
+                : "none"};
+              text-decoration: underline;
+            }
+            section::before {
+              display: ${state.isDark ? "block" : "none"};
+            }
+            .projects-module--project--1zdcJ:hover {
+              box-shadow: ${state.isDark
+                ? theme.dark.cardBoxShadow
+                : theme.light.cardBoxShadow};
+              background: ${state.isDark
+                ? "#63ceffe0"
+                : "rgba(255, 255, 255, 0.9);"};
+            }
+            .sun,
+            body::before {
               display: ${state.isDark ? "none" : "block"};
             }
-            .moon, body::after {
+            .moon,
+            body::after {
+              display: ${state.isDark ? "block" : "none"};
+            }
+            .iconsContainer {
+              display: ${state.isDark ? "none" : "block"};
+            }
+            .iconsContainerDark {
               display: ${state.isDark ? "block" : "none"};
             }
           `}

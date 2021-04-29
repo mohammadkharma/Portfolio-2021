@@ -340,6 +340,11 @@ nav .links {
   min-width: 50%;
 }
 
+nav .links a:hover {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
 .dropdown-about .dropbtn {
   border: none;
   outline: none;

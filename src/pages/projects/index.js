@@ -4,9 +4,10 @@ import React from "react"
 import Layout from "../../components/Layout"
 import * as styles from "../../styles/projects.module.css"
 import Tilt from "react-vanilla-tilt"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function Projects({ data }) {
+  const thumb = getImage(data.projects.nodes.frontmatter.thumb)
   const projects = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
 
@@ -18,10 +19,16 @@ export default function Projects({ data }) {
             <Tilt key={project.id} className={styles.tilt}>
               <div id="projects" className={styles.project}>
                 <div className={styles.content}>
-                  <Img
+                  {/* <Img
                     className={styles.img}
                     fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  /> */}
+                  <GatsbyImage
+                    className={styles.img}
+                    image={thumb}
+                    alt={project.frontmatter.slug}
                   />
+
                   <h2>{project.frontmatter.title}</h2>
                   <h4>{project.frontmatter.stack}</h4>
                   {/* <Link
@@ -66,9 +73,11 @@ export const query = graphql`
           link
           thumb {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                formats: [AUTO, WEBP, AVIF]
+                placeholder: DOMINANT_COLOR
+                layout: CONSTRAINED
+              )
             }
           }
         }

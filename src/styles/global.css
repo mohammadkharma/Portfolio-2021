@@ -31,31 +31,18 @@ body::before {
   width: 200px;
   height: 300px;
   will-change: background-position;
-  /* border-radius: 50%; */
-  /* background: linear-gradient(to right, #a4a4a4, #4f4f4f, #a4a4a4); */
   background-image: url(../../static/birds.svg);
   background-size: auto 100%;
-  /* background-position: center; */
-  /* background: #63cdff; */
   z-index: -1;
-  /* filter: blur(2px); */
-  /* animation: before 5s linear infinite; */
   animation: birdFly 1s steps(10) infinite,
     birdMovement 20s ease-in-out infinite;
-  /* animation-duration: 1s;
-  animation-delay: 0.5s;
-  animation-timing-function: steps(10);
-  animation-iteration-count: infinite; */
-  /* transform: scaleX(-1); */
   opacity: 0.5;
 }
-
 @keyframes birdFly {
   100% {
     background-position: -2150px 0;
   }
 }
-
 @keyframes birdMovement {
   40% {
     transform: scaleX(1);
@@ -85,7 +72,6 @@ body::before {
   animation: sunrise 2s infinite linear alternate,
     sunRays 2s 2s infinite linear alternate, sunMovement 5s linear infinite;
 }
-
 @keyframes sunMovement {
   25% {
     left: 15vw;
@@ -98,13 +84,11 @@ body::before {
     top: 23vh;
   }
 }
-
 @keyframes sunrise {
   0% {
     box-shadow: none;
   }
 }
-
 @keyframes sunRays {
   0% {
     box-shadow: 0 0 0 0px #ff880080, 0 0 0 20px #ff880080, 0 0 0 40px #ff880040,
@@ -139,14 +123,11 @@ body::after {
   width: 100vw;
   height: 100vh;
   background-image: url(../../static/stars.jpg);
-  /* background-position: center; */
   background-size: 110%;
   background-position: cover;
   z-index: -2;
-  /* filter: blur(2px); */
   animation: stars 5s linear infinite;
 }
-
 @keyframes stars {
   25% {
     transform: translateX(2px);
@@ -201,13 +182,11 @@ body::after {
   background: url(../../static/moon-min.jpg);
   animation: moonSpin 10s linear alternate infinite;
 }
-
 @keyframes moonSpin {
   to {
     transform: translateX(-50%);
   }
 }
-
 @keyframes moonMovement {
   25% {
     top: 10vh;
@@ -227,20 +206,160 @@ body::after {
   }
 }
 
-/* ----------------------------------- */
-/* arabic extra styles */
+/* ------------------------ arabic language extra styles --------------------------- */
+
 #headerAr,
 #formAr label,
 #skillsHobbies {
   text-align: right;
 }
-/* ----------------------------------- */
+
+/* ------------------------ layout --------------------------- */
 
 /* layout  */
 .layout {
   max-width: 90vw;
   margin: 0 auto;
 }
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 10;
+  margin: 10vh auto;
+  z-index: 1;
+}
+
+footer > p {
+  color: rgb(135, 135, 135);
+}
+
+/* icons container light theme */
+.iconsContainer {
+  margin: 30px auto;
+  width: 350px;
+  border-radius: 15px;
+  display: flex;
+  background-color: rgb(214, 214, 214);
+}
+
+.iconsContainer button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(214, 214, 214);
+  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.iconsContainer button .img {
+  border-radius: 15px;
+  font-size: 40px !important;
+}
+
+.iconsContainer button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.iconsContainer button:hover .img {
+  font-size: 42px !important;
+}
+
+.iconsContainer button:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(214, 214, 214);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconsContainer button:hover::before {
+  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iconsContainer button:active {
+  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
+}
+
+.iconsContainer button .img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+/* icons container dark theme */
+.iconsContainerDark {
+  margin: 30px auto;
+  width: 350px;
+  display: flex;
+  border-radius: 15px;
+  background-color: rgb(114, 114, 114);
+}
+
+.iconsContainerDark button {
+  width: 70px;
+  height: 70px;
+  margin: 20px;
+  outline: none;
+  border: none;
+  background: rgb(114, 114, 114);
+  box-shadow: 5px 5px 10px #212121, -5px -5px 10px #9d9d9d;
+  border-radius: 50%;
+  transition: 0.2;
+}
+
+.iconsContainerDark button .img {
+  border-radius: 15px;
+  font-size: 40px !important;
+}
+
+.iconsContainerDark button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.iconsContainerDark button:hover .img {
+  font-size: 42px !important;
+}
+
+.iconsContainerDark button:hover::before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  background: rgb(114, 114, 114);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.iconsContainerDark button:hover::before {
+  box-shadow: inset -7px -7px 20px 0 #9d9d9d,
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.iconsContainerDark button:active {
+  box-shadow: inset 1px 1px 2px #9d9d9d, inset -1px -1px 2px #212121;
+}
+
+.iconsContainerDark button .img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+/* ------------------------ nav --------------------------- */
 
 /* nav */
 nav {
@@ -259,7 +378,6 @@ nav h1.dark-theme {
   pointer-events: none;
   animation: title 5s linear infinite;
 }
-
 @keyframes title {
   0%,
   18%,
@@ -340,6 +458,11 @@ nav .links {
   min-width: 50%;
 }
 
+nav .links a {
+  font-size: 1.5em;
+  text-align: left;
+}
+
 nav .links a:hover {
   text-decoration: underline;
   margin-bottom: 10px;
@@ -389,6 +512,26 @@ nav .links a:hover {
   display: block;
 }
 
+/* hamburger icons */
+nav .hamburger {
+  position: absolute;
+  top: 35px;
+  right: 9vw;
+  background: none;
+  border: none;
+  transform: translate(5%, 5%);
+  cursor: pointer;
+  outline: none;
+  display: none;
+}
+
+nav .hamburger .line {
+  width: 30px;
+  height: 5px;
+  margin: 5px;
+}
+
+/* hidden menu */
 nav #hidden {
   display: flex;
   position: fixed;
@@ -399,6 +542,16 @@ nav #hidden {
   flex-direction: column;
   z-index: 5;
   animation: menu 0.5s ease-out;
+}
+@keyframes menu {
+  0% {
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+  }
+  100% {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+  }
 }
 
 nav #hidden a {
@@ -435,22 +588,6 @@ nav #hidden .dropdown-about:hover .dropdown-content {
 nav #hidden .theme-toggle {
   text-align: center;
   transform: translateY(0);
-}
-
-@keyframes menu {
-  0% {
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-  }
-  100% {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-  }
-}
-
-nav .links a {
-  font-size: 1.5em;
-  text-align: left;
 }
 
 /* nav theme toggle */
@@ -521,164 +658,6 @@ input:checked[type="checkbox"]::after {
   box-shadow: 0 0 5px #13b3ff, 0 0 15px #13b3ff;
   left: 75px;
 }
-
-nav .hamburger {
-  position: absolute;
-  top: 35px;
-  right: 9vw;
-  background: none;
-  border: none;
-  transform: translate(5%, 5%);
-  cursor: pointer;
-  outline: none;
-  display: none;
-}
-
-nav .hamburger .line {
-  width: 30px;
-  height: 5px;
-  margin: 5px;
-}
-
-/* footer */
-footer {
-  position: relative;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  z-index: 10;
-  margin: 10vh auto;
-  z-index: 1;
-}
-
-.iconsContainer {
-  margin: 30px auto;
-  width: 350px;
-  border-radius: 15px;
-  display: flex;
-  background-color: rgb(214, 214, 214);
-}
-
-.iconsContainer button {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
-  outline: none;
-  border: none;
-  background: rgb(214, 214, 214);
-  box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #ffffff;
-  border-radius: 50%;
-  transition: 0.2;
-}
-
-.iconsContainer button .img {
-  border-radius: 15px;
-  font-size: 40px !important;
-}
-
-.iconsContainer button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.iconsContainer button:hover .img {
-  font-size: 42px !important;
-}
-
-.iconsContainer button:hover::before {
-  content: "";
-  position: absolute;
-  height: 80%;
-  width: 80%;
-  background: rgb(214, 214, 214);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.iconsContainer button:hover::before {
-  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 1),
-    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-.iconsContainer button:active {
-  box-shadow: inset 1px 1px 2px #babeec, inset -1px -1px 2px #fff;
-}
-
-.iconsContainer button .img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  transition: 0.2s;
-}
-
-/* ------------------------------------------------- */
-
-.iconsContainerDark {
-  margin: 30px auto;
-  width: 350px;
-  display: flex;
-  border-radius: 15px;
-  background-color: rgb(114, 114, 114);
-}
-
-.iconsContainerDark button {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
-  outline: none;
-  border: none;
-  background: rgb(114, 114, 114);
-  box-shadow: 5px 5px 10px #212121, -5px -5px 10px #9d9d9d;
-  border-radius: 50%;
-  transition: 0.2;
-}
-
-.iconsContainerDark button .img {
-  border-radius: 15px;
-  font-size: 40px !important;
-}
-
-.iconsContainerDark button:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.iconsContainerDark button:hover .img {
-  font-size: 42px !important;
-}
-
-.iconsContainerDark button:hover::before {
-  content: "";
-  position: absolute;
-  height: 80%;
-  width: 80%;
-  background: rgb(114, 114, 114);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.iconsContainerDark button:hover::before {
-  box-shadow: inset -7px -7px 20px 0 #9d9d9d,
-    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.3);
-}
-
-.iconsContainerDark button:active {
-  box-shadow: inset 1px 1px 2px #9d9d9d, inset -1px -1px 2px #212121;
-}
-
-.iconsContainerDark button .img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 30px;
-  transition: 0.2s;
-}
-
-/* ------------------------------------------------- */
-
-footer > p {
-  color: rgb(135, 135, 135);
-}
-
 /* responsive */
 @media only screen and (max-width: 1200px) {
   nav h1.dark-theme,
@@ -735,11 +714,6 @@ footer > p {
     text-align: center;
   }
 
-  nav .hamburger {
-    display: block;
-    z-index: 10;
-  }
-
   nav .title {
     width: 70%;
   }
@@ -750,6 +724,11 @@ footer > p {
 
   nav .links {
     display: none;
+  }
+
+  nav .hamburger {
+    display: block;
+    z-index: 10;
   }
 
   nav #hidden {
@@ -773,17 +752,20 @@ footer > p {
 }
 
 @media only screen and (max-width: 450px) {
-  nav .dropdown-lang {
-    margin-right: -5px;
-    font-size: 0.7em;
-  }
   nav h1.dark-theme,
   nav h1.light-theme {
     font-size: 1.1em;
   }
+
+  nav .dropdown-lang {
+    margin-right: -5px;
+    font-size: 0.7em;
+  }
+
   nav .hamburger .line {
     height: 3px;
   }
+
   .iconsContainer,
   .iconsContainerDark {
     width: 150px;

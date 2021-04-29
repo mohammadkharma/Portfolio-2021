@@ -6,7 +6,6 @@ slug: Posts-Manager
 link: https://mohammadkharma.github.io/signin
 github: https://github.com/mohammadkharma/Posts_Manager_App/tree/master/posts-manager
 thumb: ../images/thumbs/post-min.jpg
-featuredImg: ../images/featured/p2-banner-min.png
 ---
 
 ### REACT

@@ -6,7 +6,6 @@ slug: Guessing-Game
 link: https://mohammadkharma.github.io/DOM/projects/guessing_game/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/guessing_game
 thumb: ../images/thumbs/guess-min.jpg
-featuredImg: ../images/featured/p6-banner-min.png
 ---
 
 A UI for a guessing game where the player has to guess a number in the browser. The player input the guess in the browser and recieve an answer will be displayed to show if the guess was successful or not The player also see how many attempts there is left.

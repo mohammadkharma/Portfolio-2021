@@ -6,7 +6,6 @@ slug: Clinic
 link: https://mohammadkharma.github.io/DOM/projects/pharmakopoeia_laboratories/
 github: https://github.com/mohammadkharma/DOM/tree/master/projects/pharmakopoeia_laboratories
 thumb: ../images/thumbs/clinic-min.jpg
-featuredImg: ../images/featured/p5-banner-min.png
 ---
 
 كان هذا المشروع عبارة عن موقع ويب نموذجي لصديق طبيب لديه مختبرات وعيادة. كان الهدف هو العمل على مشروع كامل من الأنماط إلى معالجة البيانات ونشرها أيضًا.

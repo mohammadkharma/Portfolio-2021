@@ -6,7 +6,6 @@ slug: React-Router
 link: https://mohammadkharma.github.io/
 github: https://mohammadkharma.github.io/React_Router/
 thumb: ../images/thumbs/router-min.jpg
-featuredImg: ../images/featured/p4-banner-min.png
 ---
 
 ### REACT

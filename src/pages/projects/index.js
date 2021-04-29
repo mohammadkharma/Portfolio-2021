@@ -7,7 +7,6 @@ import Tilt from "react-vanilla-tilt"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 export default function Projects({ data }) {
-  const thumb = getImage(data.projects.nodes.frontmatter.thumb)
   const projects = data.projects.nodes
   const contact = data.contact.siteMetadata.contact
 
@@ -25,7 +24,7 @@ export default function Projects({ data }) {
                   /> */}
                   <GatsbyImage
                     className={styles.img}
-                    image={thumb}
+                    image={getImage(project.frontmatter.thumb)}
                     alt={project.frontmatter.slug}
                   />
 

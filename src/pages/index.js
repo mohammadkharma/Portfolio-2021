@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Layout from "../components/Layout"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Helmet from "react-helmet"
 
 // must be checked:
@@ -13,9 +13,10 @@ export default function Home({ data }) {
     query BannerMeta {
       file(relativePath: { eq: "bewerbung-min.jpg" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(
+            formats: [AUTO, WEBP, AVIF]
+            placeholder: DOMINANT_COLOR
+          )
         }
       }
       site {
@@ -31,7 +32,7 @@ export default function Home({ data }) {
     }
   `)
 
-  const image = metadata.file.childImageSharp.fluid
+  // const image = metadata.file.childImageSharp.fluid
 
   const {
     title,
@@ -65,7 +66,12 @@ export default function Home({ data }) {
             My projects
           </Link>
         </div>
-        <Img className={styles.img} fluid={image} />
+        {/* <Img className={styles.img} fluid={image} /> */}
+        <GatsbyImage
+          className={styles.img}
+          image={getImage(metadata.file)}
+          alt={author}
+        />
       </section>
     </Layout>
   )

@@ -1,11 +1,8 @@
 import React from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
-import Layout from "../components/Layout"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Helmet from "react-helmet"
-
-// must be checked:
-// https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3/#css-modules-are-imported-as-es-modules
+import { graphql, Link, useStaticQuery } from "gatsby"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 
 export default function Home({ data }) {
@@ -31,8 +28,6 @@ export default function Home({ data }) {
       }
     }
   `)
-
-  // const image = metadata.file.childImageSharp.fluid
 
   const {
     title,
@@ -66,7 +61,6 @@ export default function Home({ data }) {
             My projects
           </Link>
         </div>
-        {/* <Img className={styles.img} fluid={image} /> */}
         <GatsbyImage
           className={styles.img}
           image={getImage(metadata.file)}

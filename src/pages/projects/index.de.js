@@ -1,7 +1,7 @@
 import React from "react"
 import Tilt from "react-vanilla-tilt"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../../components/Layout.de"
 import * as styles from "../../styles/projects.module.css"
 
@@ -17,9 +17,10 @@ export default function Projects({ data }) {
             <Tilt key={project.id} className={styles.tilt}>
               <div id="projects" className={styles.project}>
                 <div className={styles.content}>
-                  <Img
+                  <GatsbyImage
                     className={styles.img}
-                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                    image={getImage(project.frontmatter.thumb)}
+                    alt={project.frontmatter.slug}
                   />
                   <h2>{project.frontmatter.title}</h2>
                   <h4>{project.frontmatter.stack}</h4>
@@ -60,9 +61,10 @@ export const query = graphql`
           link
           thumb {
             childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(
+                formats: [AUTO, WEBP, AVIF]
+                placeholder: DOMINANT_COLOR
+              )
             }
           }
         }

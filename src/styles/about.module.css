@@ -132,22 +132,30 @@ section::before {
   backdrop-filter: blur(5px); */
 }
 
+.skills-hobbies-content .tilt {
+  width: 100% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 50px auto !important;
+  padding: 0 !important;
+  backdrop-filter: blur(2px) !important;
+}
+
 .skills-hobbies > h2 {
   text-align: center;
   margin-bottom: 5vh;
 }
 
-.skills-hobbies-content > section {
+.skills-hobbies-content .tilt > section {
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.2);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(2px);
   padding: 20px;
 }
 
-.skills-hobbies-content > section p b {
+.skills-hobbies-content .tilt > section p b {
   color: orangered;
 }
 
@@ -155,12 +163,12 @@ section::before {
   margin: 10vh auto;
 }
 
-.skills-hobbies-content > section ul {
+.skills-hobbies-content .tilt > section ul {
   margin: 20px;
   width: 100%;
 }
 
-.skills-hobbies-content > section ul li {
+.skills-hobbies-content .tilt > section ul li {
   margin: 10px;
 }
 

@@ -64,6 +64,20 @@ export default function Layout({ children }) {
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }
+            #gatsby-focus-wrapper
+              > div
+              > div
+              > div.about-module--skills-hobbies--1Wmp-
+              > div
+              > div:nth-child(1)
+              > section:hover,
+            #gatsby-focus-wrapper
+              > div
+              > div
+              > div.about-module--skills-hobbies--1Wmp-
+              > div
+              > div:nth-child(2)
+              > section:hover,
             section:hover,
             .projects-module--project--1zdcJ:hover {
               box-shadow: ${state.isDark

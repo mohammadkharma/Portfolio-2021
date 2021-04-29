@@ -71,7 +71,7 @@ export default function Layout({ children }) {
                 : theme.light.cardBoxShadow};
               background: ${state.isDark
                 ? "#63ceff6d"
-                : "rgba(255, 255, 255, 0.5);"};
+                : "rgba(255, 255, 255, 0.7);"};
               backdrop-filter: blur(7px);
             }
             .sun,

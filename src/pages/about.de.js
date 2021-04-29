@@ -23,9 +23,10 @@ export default function About() {
               Heimatland verlasse und meine Karriere ändere. Und hier bin ich
               heute und lebe einen neuen Traum als Webentwickler in Berlin.
             </p>
+            <br />
+            <br />
             <span>
               „Du verfehlst 100 % der Torschüsse, die du nicht machst“
-              <br />
               <br />
               Wayne Gretzky
             </span>
@@ -40,10 +41,11 @@ export default function About() {
               Front-End-Bereich, um außergewöhnliche Produkte für Kunden zu
               liefern.
             </p>
+            <br />
+            <br />
             <span>
               „Perfektion ist nicht erreichbar, aber wenn wir Perfektion
               verfolgen, können wir Spitzenleistungen erzielen“
-              <br />
               <br />
               Vince Lombardi
             </span>
@@ -58,10 +60,11 @@ export default function About() {
               meisten Menschen möchte ich eine Rolle erhalten, die in Zukunft
               mehr Verantwortung trägt.
             </p>
+            <br />
+            <br />
             <span>
               „Der beste Weg, die Zukunft vorherzusagen, besteht darin, sie zu
               schaffen“
-              <br />
               <br />
               Abraham Lincoln
             </span>

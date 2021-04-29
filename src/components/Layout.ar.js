@@ -64,13 +64,15 @@ export default function Layout({ children }) {
             section::before {
               display: ${state.isDark ? "block" : "none"};
             }
+            section:hover,
             .projects-module--project--1zdcJ:hover {
               box-shadow: ${state.isDark
                 ? theme.dark.cardBoxShadow
                 : theme.light.cardBoxShadow};
               background: ${state.isDark
-                ? "#63ceffe0"
-                : "rgba(255, 255, 255, 0.9);"};
+                ? "#63ceff6d"
+                : "rgba(255, 255, 255, 0.5);"};
+              backdrop-filter: blur(7px);
             }
             .sun,
             body::before {

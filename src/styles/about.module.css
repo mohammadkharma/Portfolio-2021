@@ -1,5 +1,6 @@
 .about {
   margin: 5vh auto;
+  width: 70%;
 }
 
 .about h1 {
@@ -24,39 +25,49 @@ section::before {
   }
 }
 
-.about-me {
-  display: grid;
-  margin: 20px auto;
-  grid-template-columns: 1fr 1fr 1fr;
+.about-me .tilt {
+  width: 100% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  margin: 50px auto !important;
+  padding: 0 !important;
 }
 
 .about-me-item {
   text-align: center;
-  margin: 20px;
   padding: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.5);
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
   backdrop-filter: blur(5px);
 }
 
-.about-me-item h2 {
+.img {
+  width: 400px;
+  height: 300px;
+  border-radius: 15px;
+}
+
+.about-me-item-content {
+  width: 50%;
+}
+
+.about-me-item-content h2 {
   color: orangered;
+  text-align: left;
 }
 
-.about-me-item > * {
-  display: block;
-  margin: 10px auto;
-  align-items: center;
-  width: 80%;
+.about-me-item-content p {
+  text-align: left;
 }
 
-.about-me-item span {
+.about-me-item-content span {
   font-style: italic;
 }
 
@@ -114,13 +125,28 @@ section::before {
 
 /* responsive */
 @media only screen and (max-width: 1200px) {
-  .about-me {
-    grid-template-columns: 1fr 1fr;
+  .about-me-item {
+    flex-direction: column;
+  }
+
+  .about-me-item > * {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .about-me-item-content > * {
+    text-align: center !important;
   }
 }
 
-@media only screen and (max-width: 800px) {
-  .about-me {
-    grid-template-columns: 1fr;
+@media only screen and (max-width: 500px) {
+  .about {
+    width: 90%;
+  }
+
+  .img {
+    width: 220px;
+    height: 180px;
+    margin: 0 auto;
   }
 }

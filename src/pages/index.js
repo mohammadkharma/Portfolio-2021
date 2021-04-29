@@ -1,5 +1,6 @@
 import React from "react"
 import Helmet from "react-helmet"
+import Tilt from "react-vanilla-tilt"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
@@ -52,21 +53,23 @@ export default function Home({ data }) {
         <meta property="og:url" content={url} />
         <meta rel="canonical" href={url} />
       </Helmet>
-      <section className={styles.header}>
-        <div className={styles.intro}>
-          <h2>Develop</h2>
-          <h3>Design & Deploy</h3>
-          <p>Web developer & designer based in Berlin</p>
-          <Link className={styles.btn} to="/projects">
-            My projects
-          </Link>
-        </div>
-        <GatsbyImage
-          className={styles.img}
-          image={getImage(metadata.file)}
-          alt={author}
-        />
-      </section>
+      <Tilt className={styles.tilt}>
+        <section className={styles.header}>
+          <div className={styles.intro}>
+            <h2>Develop</h2>
+            <h3>Design & Deploy</h3>
+            <p>Web developer & designer based in Berlin</p>
+            <Link className={styles.btn} to="/projects">
+              My projects
+            </Link>
+          </div>
+          <GatsbyImage
+            className={styles.img}
+            image={getImage(metadata.file)}
+            alt={author}
+          />
+        </section>
+      </Tilt>
     </Layout>
   )
 }

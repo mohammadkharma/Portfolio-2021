@@ -1,12 +1,12 @@
 import React, { useContext } from "react"
-import Navbar from "./Navbar"
-import "../styles/global.css"
 import { Global, css } from "@emotion/core"
 import { useTheme } from "@emotion/react"
-import Context from "../store/context"
 import { FaXing } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { FaLinkedin } from "react-icons/fa"
+import Context from "../store/context"
+import Navbar from "./Navbar"
+import "../styles/global.css"
 
 export default function Layout({ children }) {
   const { state } = useContext(Context)
@@ -101,19 +101,16 @@ export default function Layout({ children }) {
           <button>
             <a href="https://github.com/mohammadkharma">
               <FaGithub className="img" />
-              {/* <img src={GH} alt="Github" /> */}
             </a>
           </button>
           <button>
             <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
               <FaLinkedin className="img" />
-              {/* <img src={LI} alt="LinkedIn" /> */}
             </a>
           </button>
           <button>
             <a href="https://www.xing.com/profile/Mohammad_Kharma2">
               <FaXing className="img" />
-              {/* <img src={XG} alt="Xing" /> */}
             </a>
           </button>
         </div>

@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
 import React, { useContext, useState } from "react"
-import Context from "../store/context"
 import { HiTranslate } from "react-icons/hi"
+import { Link } from "gatsby"
+import Context from "../store/context"
 
 export default function Navbar() {
   const { state, dispatch } = useContext(Context)

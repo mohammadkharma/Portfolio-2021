@@ -1,10 +1,9 @@
-// import { graphql, Link } from "gatsby"
-import { graphql } from "gatsby"
 import React from "react"
+import Tilt from "react-vanilla-tilt"
+import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../../components/Layout.ar"
 import * as styles from "../../styles/projects.module.css"
-import Tilt from "react-vanilla-tilt"
-import Img from "gatsby-image"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -24,12 +23,6 @@ export default function Projects({ data }) {
                   />
                   <h2>{project.frontmatter.title}</h2>
                   <h4>{project.frontmatter.stack}</h4>
-                  {/* <Link
-                    className={styles.btn}
-                    to={"/projects-md/" + project.frontmatter.slug}
-                  >
-                    read more ⬇
-                  </Link> */}
                   <p className={styles.readMore}>⬇ اقرأ أكثر</p>
                 </div>
                 <div className={styles.content}>

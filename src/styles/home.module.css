@@ -26,7 +26,6 @@
   z-index: -1;
   animation: headerBefore 0.5s;
 }
-
 @keyframes headerBefore {
   0% {
     box-shadow: none;

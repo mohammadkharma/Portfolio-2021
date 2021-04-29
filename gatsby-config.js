@@ -10,6 +10,7 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-image",
     "gatsby-plugin-emotion",
     "gatsby-plugin-react-helmet",
     {

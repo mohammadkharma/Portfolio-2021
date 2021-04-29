@@ -10,7 +10,7 @@ export default function SkillsHobbies() {
         <h2>Skills & Hobbies</h2>
         <div className={styles.skillsHobbiesContent}>
           <Tilt className={styles.tilt}>
-            <section className={styles.skills}>
+            <section>
               <p>
                 In the new Tech world, it's good to have some digital skills. I
                 improved mine in <b>MS Office</b>, <b>Photoshop</b>,{" "}

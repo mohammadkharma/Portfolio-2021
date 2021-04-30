@@ -60,7 +60,7 @@ export const query = graphql`
           link
           thumb {
             childImageSharp {
-              gatsbyImageData(placeholder: DOMINANT_COLOR)
+              gatsbyImageData(placeholder: BLURRED)
             }
           }
         }

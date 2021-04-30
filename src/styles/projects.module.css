@@ -114,6 +114,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .projectsHomepage {
+    width: 100%;
+  }
+
   .projectsHomepage > h3 {
     width: 90%;
   }

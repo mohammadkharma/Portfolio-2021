@@ -59,6 +59,14 @@ export const query = graphql`
           stack
           title
           link
+          thumb {
+            childImageSharp {
+              gatsbyImageData(
+                formats: [AUTO, WEBP, AVIF]
+                placeholder: DOMINANT_COLOR
+              )
+            }
+          }
         }
         id
       }

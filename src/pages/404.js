@@ -7,7 +7,7 @@ export default function Error404() {
     <Layout>
       <div className={styles.error}>
         <h2>Error 404</h2>
-        <h3>sorry, page not founf</h3>
+        <h3>page not founf</h3>
       </div>
     </Layout>
   )

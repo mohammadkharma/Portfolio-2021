@@ -1,9 +1,10 @@
-import React from "react"
-import Tilt from "react-vanilla-tilt"
+// import { graphql, Link } from "gatsby"
 import { graphql } from "gatsby"
-// import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React from "react"
 import Layout from "../../components/Layout.de"
 import * as styles from "../../styles/projects.module.css"
+import Tilt from "react-vanilla-tilt"
+import Img from "gatsby-image"
 
 export default function Projects({ data }) {
   const projects = data.projects.nodes
@@ -17,13 +18,18 @@ export default function Projects({ data }) {
             <Tilt key={project.id} className={styles.tilt}>
               <div id="projects" className={styles.project}>
                 <div className={styles.content}>
-                  {/* <GatsbyImage
+                  <Img
                     className={styles.img}
-                    image={getImage(project.frontmatter.thumb)}
-                    alt={project.frontmatter.slug}
-                  /> */}
+                    fluid={project.frontmatter.thumb.childImageSharp.fluid}
+                  />
                   <h2>{project.frontmatter.title}</h2>
                   <h4>{project.frontmatter.stack}</h4>
+                  {/* <Link
+                    className={styles.btn}
+                    to={"/projects-md/" + project.frontmatter.slug}
+                  >
+                    read more ⬇
+                  </Link> */}
                   <p className={styles.readMore}>weiterlesen ⬇</p>
                 </div>
                 <div className={styles.content}>
@@ -59,6 +65,13 @@ export const query = graphql`
           stack
           title
           link
+          thumb {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         id
       }

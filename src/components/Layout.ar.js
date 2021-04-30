@@ -69,14 +69,14 @@ export default function Layout({ children }) {
               > div
               > div.about-module--skills-hobbies--1Wmp-
               > div
-              > div:nth-child(1)
+              > div:nth-of-type(1)
               > section:hover,
             #gatsby-focus-wrapper
               > div
               > div
               > div.about-module--skills-hobbies--1Wmp-
               > div
-              > div:nth-child(2)
+              > div:nth-of-type(2)
               > section:hover,
             section:hover,
             .projects-module--project--1zdcJ:hover {

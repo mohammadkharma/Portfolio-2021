@@ -6,6 +6,9 @@
 
 module.exports = {
   /* Your site config here */
+  flags: {
+    FAST_DEV: true,
+  },
   plugins: [
     "gatsby-transformer-remark",
     "gatsby-transformer-sharp",

@@ -49,7 +49,7 @@ module.exports = {
     copyright: "This website is copyright 2021",
     contact: "mohammad.kh.8688@gmail.com",
     type: "website",
-    url: "https://zealous-kare-ed9156.netlify.app/",
+    url: "https://mohammad-kharma-portfolio.netlify.app/",
     keywords: "Javascript html css web development frontend design deploy data",
   },
 }

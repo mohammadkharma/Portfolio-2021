@@ -64,6 +64,7 @@ module.exports = {
         crossOrigin: `use-credentials`,
       },
     },
+    "gatsby-plugin-offline",
   ],
   siteMetadata: {
     title: "Web Developmer - Portfolio",

@@ -29,7 +29,7 @@ export default function Navbar() {
           المشاريع
         </Link>
         <div className="dropdown-about">
-          <button className="dropbtn">
+          <button className="dropbtn" aria-label="dropbtn">
             <Link to="/about.ar" activeClassName="active">
               حول
             </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
       </div>
 
       <div className="dropdown-lang">
-        <button className="dropbtn">
+        <button className="dropbtn" aria-label="dropbtn">
           <HiTranslate />
         </button>
         <section className="dropdown-content">
@@ -65,6 +65,7 @@ export default function Navbar() {
       </div>
 
       <button
+        aria-label="humburger"
         className="hamburger"
         onClick={() => setShowLinks(!showLinks)}
         onKeyPress={() => setShowLinks(!showLinks)}

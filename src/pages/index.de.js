@@ -32,7 +32,7 @@ export default function Home({ data }) {
 
   const {
     title,
-    desciption,
+    description,
     url,
     type,
     keywords,
@@ -40,14 +40,18 @@ export default function Home({ data }) {
   } = metadata.site.siteMetadata
   return (
     <Layout>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "de",
+        }}
+      >
         <title> {title} </title>
-        <meta name="dscription" content={desciption} />
+        <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <meta property="og:author" content={author} />
         <meta property="og:title" content={title} />
         <meta property="og:type" content={type} />
-        <meta property="og:description" content={desciption} />
+        <meta property="og:description" content={description} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:url" content={url} />
         <meta rel="canonical" href={url} />

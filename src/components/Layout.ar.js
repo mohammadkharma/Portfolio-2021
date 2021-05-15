@@ -114,35 +114,47 @@ export default function Layout({ children }) {
       </div>
       <footer>
         <div className="iconsContainer">
-          <button>
-            <a href="https://github.com/mohammadkharma">
+          <button aria-label="link">
+            <a href="https://github.com/mohammadkharma" aria-label="account">
               <FaGithub className="img" />
             </a>
           </button>
-          <button>
-            <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
+          <button aria-label="link">
+            <a
+              href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/"
+              aria-label="account"
+            >
               <FaLinkedin className="img" />
             </a>
           </button>
-          <button>
-            <a href="https://www.xing.com/profile/Mohammad_Kharma2">
+          <button aria-label="link">
+            <a
+              href="https://www.xing.com/profile/Mohammad_Kharma2"
+              aria-label="account"
+            >
               <FaXing className="img" />
             </a>
           </button>
         </div>
         <div className="iconsContainerDark">
-          <button>
-            <a href="https://github.com/mohammadkharma">
+          <button aria-label="link">
+            <a href="https://github.com/mohammadkharma" aria-label="account">
               <FaGithub className="img" />
             </a>
           </button>
-          <button>
-            <a href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/">
+          <button aria-label="link">
+            <a
+              href="https://www.linkedin.com/in/mohammad-kharma-95606ba9/"
+              aria-label="account"
+            >
               <FaLinkedin className="img" />
             </a>
           </button>
-          <button>
-            <a href="https://www.xing.com/profile/Mohammad_Kharma2">
+          <button aria-label="link">
+            <a
+              href="https://www.xing.com/profile/Mohammad_Kharma2"
+              aria-label="account"
+            >
               <FaXing className="img" />
             </a>
           </button>

@@ -33,9 +33,13 @@ export default function Home({ data }) {
   const { url, keywords } = metadata.site.siteMetadata
   return (
     <Layout>
-      <Helmet>
+      <Helmet
+        htmlAttributes={{
+          lang: "ar",
+        }}
+      >
         <title> مطور ويب </title>
-        <meta name="dscription" content="حافظة لمطور الويب" />
+        <meta name="description" content="حافظة لمطور الويب" />
         <meta name="keywords" content={keywords} />
         <meta property="og:author" content="محمد خرما" />
         <meta property="og:title" content="مطور ويب" />

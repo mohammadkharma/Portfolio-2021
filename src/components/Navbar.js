@@ -66,6 +66,9 @@ export default function Navbar() {
 
         <div className="theme-toggle">
           <p>Dark mode:</p>
+          <label for="checkbox" hidden>
+            theme toggle
+          </label>
           <input
             onClick={() => dispatch({ type: "TOGGLE_DARK_MODE" })}
             id="checkbox"

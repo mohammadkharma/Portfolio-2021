@@ -66,7 +66,7 @@ export default function Navbar() {
 
         <div className="theme-toggle">
           <p>Dunkler Modus:</p>
-          <label for="checkbox" hidden>
+          <label htmlFor="checkbox" hidden>
             theme toggle
           </label>
           <input

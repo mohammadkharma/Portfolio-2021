@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="links" id={showLinks ? "hidden" : ""}>
         <div className="theme-toggle">
           <p>:الوضع المظلم</p>
-          <label for="checkbox" hidden>
+          <label htmlFor="checkbox" hidden>
             theme toggle
           </label>
           <input

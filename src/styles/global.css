@@ -416,7 +416,6 @@ nav h1.light-theme {
   outline: none;
   font-size: 2em;
   background: none;
-  width: 100px;
 }
 
 .dropdown-lang .dropdown-content {
@@ -527,7 +526,7 @@ nav .hamburger {
 
 nav .hamburger .line {
   width: 30px;
-  height: 5px;
+  height: 3.5px;
   margin: 5px;
 }
 
@@ -719,7 +718,7 @@ input:checked[type="checkbox"]::after {
   }
 
   nav .dropdown-lang {
-    margin-right: 50px;
+    margin-right: 70px;
   }
 
   nav .links {
@@ -758,12 +757,11 @@ input:checked[type="checkbox"]::after {
   }
 
   nav .dropdown-lang {
-    margin-right: -5px;
     font-size: 0.7em;
   }
 
   nav .hamburger .line {
-    height: 3px;
+    height: 2.5px;
   }
 
   .iconsContainer,
